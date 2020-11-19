@@ -3,6 +3,124 @@
   box-sizing:border-box;
 }
 
-.sinterklaas {
-    background-color: slategray
+/* hier begint de CSS van de eerste homepagina*/
+
+/* hier begint de CSS van de header */
+
+.logo {
+    width: 200px;
+    max-width:100%;
+    height:auto;
 }
+
+.header {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    max-width:100%;
+    height:auto;
+}
+
+.start {
+    display: flex;
+    flex-direction: column;
+}
+
+.eten {
+    display: flex;
+    height: 170px;
+}
+
+/* hier begint de CSS van de eerste section 'nieuw' */
+
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.foto1 {
+    display: flex;
+    justify-content: center;
+    max-width:100%;
+    height:auto;
+}
+
+.foto2 {
+    display: flex;
+    justify-content: center;
+    max-width:100%;
+    height:auto;
+}
+
+.nieuw {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.bakken {
+    border-bottom-style: solid;
+    border-color: black;
+    margin-top: 20px;
+}
+
+.kookmutsje {
+    border-bottom-style: solid;
+    border-color: black;
+    margin-top: 20px;
+}
+
+/* hier begint de CSS van de section 'introductie' */
+
+.auteur {
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+}
+/* hier begint de CSS van de section 'recepten' */
+
+.recepten {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.foto3 {
+    display: flex;
+    justify-content: center;
+    max-width:100%;
+    height:auto;
+}
+
+/* hier begint de CSS van de section 'populair' */
+
+/* hier begint de CSS van de section 'Sinterklaas' */
+
+.foto4 {
+    display: flex;
+    justify-content: center;
+    max-width:100%;
+    height:auto;
+}
+
+/* hier begint de CSS van de section 'inloggen' */
+
+/* hier begint de CSS van de section 'herstrecepten' */
+
+.foto5 {
+    display: flex;
+    justify-content: center;
+    max-width:100%;
+    height:auto;
+}
+
+/* hier begint de CSS van de footer */
+
