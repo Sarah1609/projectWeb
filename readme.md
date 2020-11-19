@@ -62,7 +62,7 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ## Breakdownschets (week 1)
 
-<img src="images/goeie%20schets.png" width="357px" alt="breakdownschets">
+<img src="images.readme/goeie%20schets.png" width="357px" alt="breakdownschets">
 
 
 ## Intake (week 1)
@@ -75,8 +75,8 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 **Screenshot(s) van de eerste pagina (small screen):**
 
-<img src="images/Startpagina.PNG" width="375px" alt="destartpagina">
+<img src="images.readme/Startpagina.PNG" width="375px" alt="destartpagina">
 
 **Screenshot(s) van de tweede pagina (small screen):**
 
-<img src="images/Inspiratie.PNG" width="375px" alt="inspiratiezoekenvoorrecepten">
+<img src="images.readme/Inspiratie.PNG" width="375px" alt="inspiratiezoekenvoorrecepten">
