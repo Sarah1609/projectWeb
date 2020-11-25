@@ -38,7 +38,17 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ### Stand van zaken
 
--dit ging goed & dit was lastig-
+<b> Dit ging er goed </b>
+
+- Ik zag er een beetje tegenop dat ik weer moest coderen omdat het coderen me in het eerste jaar niet zo goed af ging. Het duurde heel lang voor mij om het eindelijk door te hebben en om iets leuks in elkaar te zetten. Toen ik ben begonnen met de site bleek ik het toch sneller op te pakken dan ik had verwacht van mezelf. Ik vond dit een grote tegenvaller en vind het coderen zelfs leuker nu.
+
+<b> Dit ging er minder goed </b>
+
+- De website heeft bepaalde elementen wat ik nog niet helemaal begrijp. De nieuwe elementen die we nu geleerd hebben met code pen kan ik ook nog niet heel goed plaatsen in me website. Hier val ik weer terug in me eerste jaar (nieuwe begrippen duren voor mij gewoon langer om te begrijpen). Code pen helpt mij overigens wel erg om het beter en sneller te begrijpen. Met deze elementen liep ik vast tijdens me eerste proces:
+
+- HR elementen waar ik tekst overheen moest plaatsen
+- De tab bar van de website
+- De website volledig responsive maken
 
 **Screenshot(s):**
 
@@ -59,6 +69,10 @@ Susan van de Wiel haar agendapunten:
 - Moet in Github ook de opdrachten komen te staan wat je hebt gemaakt in codepen.io?
 
 Palenque Groot haar agendapunten:
+
+- Moet ik de carousel/slider/button maken met gewoon css?
+- Moet ik de foto’s van insta “life” er in zetten?
+- Moeten de links binnen je eigen website terug linken naar de andere pagina?
 
 Casper Hamers zijn agendapunten:
 
