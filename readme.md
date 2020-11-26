@@ -7,8 +7,9 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ## Bronnenlijst
 1. <https://www.leukerecepten.nl>
-2. -bron 2-
-3. -...-
+2. <https://www.w3schools.com/howto/howto_css_style_hr.asp>
+3. <https://www.handleidinghtml.nl/css/eigenschappen/color/voorbeelden.html>
+4.
 
 
 
@@ -40,19 +41,23 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 <b> Dit ging er goed </b>
 
-- Ik zag er een beetje tegenop dat ik weer moest coderen omdat het coderen me in het eerste jaar niet zo goed af ging. Het duurde heel lang voor mij om het eindelijk door te hebben en om iets leuks in elkaar te zetten. Toen ik ben begonnen met de site bleek ik het toch sneller op te pakken dan ik had verwacht van mezelf. Ik vond dit een grote tegenvaller en vind het coderen zelfs leuker nu.
+Ik zag er een beetje tegenop dat ik weer moest coderen omdat het coderen me in het eerste jaar niet zo goed af ging. Het duurde heel lang voor mij om het eindelijk door te hebben en om iets leuks in elkaar te zetten. Toen ik ben begonnen met de site bleek ik het toch sneller op te pakken dan ik had verwacht van mezelf. Ik vond dit een grote tegenvaller en vind het coderen zelfs leuker nu.
 
 <b> Dit ging er minder goed </b>
 
-- De website heeft bepaalde elementen wat ik nog niet helemaal begrijp. De nieuwe elementen die we nu geleerd hebben met code pen kan ik ook nog niet heel goed plaatsen in me website. Hier val ik weer terug in me eerste jaar (nieuwe begrippen duren voor mij gewoon langer om te begrijpen). Code pen helpt mij overigens wel erg om het beter en sneller te begrijpen. Met deze elementen liep ik vast tijdens me eerste proces:
+De website heeft bepaalde elementen wat ik nog niet helemaal begrijp. De nieuwe elementen die we nu geleerd hebben met code pen kan ik ook nog niet heel goed plaatsen in me website. Hier val ik weer terug in me eerste jaar (nieuwe begrippen duren voor mij gewoon langer om te begrijpen). Code pen helpt mij overigens wel erg om het beter en sneller te begrijpen. Met deze elementen liep ik vast tijdens me eerste proces:
 
 - HR elementen waar ik tekst overheen moest plaatsen
 - De tab bar van de website
 - De website volledig responsive maken
 
-**Screenshot(s):**
+**Screenshot(s):
 
--screenshot(s) van hoe ver je bent met korte uitleg-
+<img src="images.readme/voortgang1.png" width="357px" alt="voortgangweek1">
+
+<b> Uitleg </b>
+
+Alle basis HTML heb ik nu verwerkt in de website. Ik zit nu denk ik op 40 a 50% CSS wat ik verwerkt heb. De HTML ging me best goed en snel af, CSS heb ik wat meer tijd voor nodig maar met hulp kom ik er wel uit.
 
 ### Agenda voor meeting
 
