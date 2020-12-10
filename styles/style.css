@@ -20,32 +20,6 @@ body {
 
 /* hier begint de CSS van algemene onderdelen over de hele pagina */
 
-.streep {
-    position: absolute;
-    margin-bottom: 20px;
-}
-
-.line {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    background-color: white;
-    width: 100px;
-    top: 50%;
-    left: 155%;
-    bottom: 40px;
-    font-family: 'Puritan-Regular', sans-serif;
-}
-
-h2 {
-    display: flex;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-left: 10px;
-    font-size: 20px;
-    font-family: 'Puritan-Regular', sans-serif;
-
-}
 
 p {
     display: flex;
@@ -55,17 +29,12 @@ p {
     font-family: 'OpenSans-Light', sans-serif;
 }
 
-hr {
-    display: flex;
-    border-color: black;
-    margin-bottom: 25px;
-}
 
 h1 {
-    display:flex;
+    display: flex;
     justify-content: center;
     margin-bottom: 20px;
-    font-family: 'Puritan-Regular', sans-serif;
+    font-family: 'Zilla Slab', sans-serif;
 }
 
 
@@ -97,6 +66,57 @@ h1 {
     height: 170px;
 }
 
+.start > div {
+
+background-image: url(../images/header.jpg);
+background-size: cover;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 15em;
+width: 100vw;
+}
+
+.start >  div > div{
+
+background-color: rgba(255, 255, 255, 0.75);
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-around;
+padding: 16px;
+height: 150px;
+width: 85vw;
+}
+
+.start > div > div > div{
+
+  height: 3em;
+  width: 60vw;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.start > div > div > div > span:nth-of-type(1){
+
+background-color: white;
+color: black;
+width: 100%;
+height: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+
+.start > div > div > div > span:nth-of-type(2) {
+
+height: 3em;
+width: 3em;
+}
 /* hier begint de CSS van de eerste section 'nieuw' */
 
 
@@ -136,6 +156,12 @@ h1 {
     flex-direction: column;
 }
 
+main > section:nth-of-type(2) > p {
+    display: block;
+    margin: 5px 25px 5px 25px;
+    text-align: center;
+    line-height: 25px;
+}
 
 /* hier begint de CSS van de section 'recepten' */
 
@@ -153,10 +179,24 @@ h1 {
 
 /* hier begint de CSS van de section 'populair' */
 
-.p1 {
-    display:flex;
-    color: black;
+
+main > section:nth-of-type(4) ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
 }
+
+main > section:nth-of-type(4) li {
+    display: flex;
+    flex-wrap: wrap;
+    text-decoration: none;
+    padding: 10px;
+    justify-content: center;
+    border: solid #000000 .1em;
+    margin: .2em;
+}
+
 
 /* hier begint de CSS van de section 'Sinterklaas' */
 
@@ -173,6 +213,19 @@ h1 {
 
 /* hier begint de CSS van de section 'inloggen' */
 
+main > section:nth-of-type(4) > h2,
+section:nth-of-type(6) > h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    font-family: 'Zilla Slab', sans-serif;
+    color: white;
+    width: 300px;
+    height: 40px;
+    margin: 20px 20px 20px 40px;
+}
+
 /* hier begint de CSS van de section 'herstrecepten' */
 
 .foto5 {
@@ -187,3 +240,142 @@ h1 {
 }
 
 /* hier begint de CSS van de footer */
+
+.eind {
+    background: #dde9e8;
+}
+
+input {
+    width: 300px;
+    height: 30px;
+    border-radius: 5px 5px 5px 5px;
+    border-style: none;
+}
+
+/* hier begint de CSS van de tabbar */
+
+.tab  {
+    position: fixed;
+    bottom: 0%;
+    width: 100vh;
+    background-color: #6e8d88;
+}
+
+.tab > nav > ul > li {
+    flex-direction: column;
+    align-content: center;
+    list-style: none;
+    display: flex;
+    flex-direction: wrap;
+    margin: 0px 15px 0px 15px;
+}
+
+.tab > nav > ul {
+    display: flex;
+    padding: 10px 10px 10px 10px;
+    width: 10px;
+}
+
+.tab > nav > ul > li > img {
+    display: flex;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+}
+
+
+
+
+.tab > nav > ul > li > span {
+    display:flex;
+    flex-direction: row;
+    font-size: 10px;
+    color: #FFFFFF;
+    margin-top: 10px;
+}
+
+
+/* hier begint de CSS van de detailpagina */
+
+/* hier begint de CSS van de introductie section */
+
+.detail > section:nth-of-type(1) > h1 {
+    font-family: 'Zilla Slab', sans-serif;
+    margin-top: 10px;
+}
+
+.detail > section:nth-of-type(2) > h2,
+.detail > section:nth-of-type(5) > h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    font-family: 'Zilla Slab', sans-serif;
+    color: white;
+    width: 300px;
+    height: 40px;
+    margin: 20px 20px 20px 40px;
+}
+
+/* hier begint de CSS van populair van de detailpagina */
+
+.detail > section:nth-of-type(3) > ul {
+    display:flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: center;
+}
+
+.detail > section:nth-of-type(3) > ul > li {
+    flex-basis: 30%;
+    margin-left: 10px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+.detail > section:nth-of-type(3) > ul > li > img {
+    width: 150px;
+    height: 110px;
+}
+
+.detail > section:nth-of-type(3) > ul > li > span {
+    display:flex;
+    font-family: 'OpenSans-Light', sans-serif;
+    font-size: 15px;
+    text-align: center;
+}
+
+/* hier begint de CSS van de herfstrecepten van de detailpagina */
+
+.detail > section:nth-of-type(5) > p {
+    color: #ffffff;
+    text-align: center;
+    margin-top: 24px;
+    font-size: 10px;;
+    line-height: 1.75;
+}
+.detail > section:nth-of-type(5) > ul {
+    display:flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: center;
+}
+
+.detail > section:nth-of-type(5) > ul > li {
+    flex-basis: 30%;
+    margin-left: 10px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+.detail > section:nth-of-type(5) > ul > li > img {
+    margin-left: 10px;
+    width: 150px;
+    height: 90px;
+}
+
+.detail > section:nth-of-type(5) > ul > li > span {
+    display:flex;
+    font-family: 'OpenSans-Light', sans-serif;
+    font-size: 15px;
+    text-align: center;
+    color: #ffffff;
+}

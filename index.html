@@ -9,6 +9,8 @@
     <title>Leuke recepten</title>
 
     <link href="styles/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -20,25 +22,30 @@
 
         <section class="header">
 
-        <img class="logo" src="images/logo.png" alt="logo">
+            <img class="logo" src="images/logo.png" alt="logo">
 
         </section>
 
-        <img class="eten" src="images/header.jpg" alt="eten">
-
+        <div>
+            <div>
+                <div>
+                    filters
+                </div>
+                <div>
+                    <span>Naam gerecht of ingredient</span>
+                    <span> zoek icoon</span>
+                </div>
+            </div>
+        </div>
     </header>
 
     <!--------------------------------------------------------- start van de eerste section 'nieuw' ---->
 
-    <section class="nieuw">
+   <main>
 
-        <hr>
+         <section class="nieuw">
 
-       <div class="streep">
-
-        <h1 class="line">NIEUW</h1>
-
-        </div>
+         <h1>Nieuw</h1>
 
         <section class="bakken">
 
@@ -49,8 +56,6 @@
             <p>zelf brood maken hoeft niet moeilijk of ingewikkeld te zijn. Met deze 10 recepten maak je zelf een heerlijk vers brood, soms al binnen 30 minuten.</p>
 
         </section>
-
-        <hr>
 
         <section class="kookmutsje">
 
@@ -64,7 +69,6 @@
 
     </section>
 
-    <hr>
 
     <!----------------------------------------------------- start van de introductie van de auteur van de pagina ----->
 
@@ -74,21 +78,22 @@
 
         <h1>WELKOM</h1>
 
-        <p class="introductie">Leuk dat je mijn site bezoekt. Met mijn recepten laat ik zien dat je makkelijk en met weinig ingrediënten een lekkere en verassende maaltijd op tafel kunt zetten. Lees hier meer over mij. Groetjes Sandra. </p>
+        <p>Leuk dat je mijn site bezoekt. Met mijn recepten laat ik zien dat je makkelijk en met weinig ingrediënten een lekkere en verassende maaltijd op tafel kunt zetten. Lees hier meer over mij. <br>
+        <br>
+
+        Groetjes Sandra. </p>
 
     </section>
 
-    <!-------- start met de section 'recepten' ---->
+    <!---------------------------------------------------------------------- start met de section 'recepten' ---->
 
     <section class="recepten">
 
-         <hr>
+     <h1 class="line">
 
-       <div class="streep">
+        <span>Recepten</span>
 
-        <h1 class="line">Recepten</h1>
-
-        </div>
+        </h1>
 
         <img class="foto3" src="images/aardappel.jpg" alt="zoete aardappel gratin">
         <p>Zoete aardappe gratin</p>
@@ -101,32 +106,31 @@
 
     </section>
 
-    <!----- start met de section 'populair' ----->
+    <!-------------------------------------------------------------- start met de section 'populair' ----->
 
     <section class="populair">
 
-         <hr>
 
-       <div class="streep">
+            <h1 class="line">Populair</h1>
 
-        <h1 class="line">Populair</h1>
 
-        </div>
+        <ul>
+            <li>SINTERKLAAS RECEPTEN</li>
+            <li>HERFSTRECEPTEN</li>
+            <li>SOEPEN</li>
+            <li>KERSTRECEPTEN</li>
+            <li>TAART RECEPTEN</li>
+            <li>VEGETARISCHE RECEPTEN</li>
+            <li>OVENSCHOTELS</li>
+            <li>STAMPOT RECEPTEN</li>
 
-        <p class="p1">SINTERKLAAS RECEPTEN</p>
-        <p class="p2">HERFSTRECEPTEN</p>
-        <p class="p3">>SOEPEN</p>
-        <p class="p4">KERSTRECEPTEN</p>
-        <p class="p5">TAART RECEPTEN</p>
-        <p class="p6">VEGETARISCHE RECEPTEN</p>
-        <p class="p7">OVENSCHOTELS</p>
-        <p clas="p8">STAMPOT RECEPTEN</p>
+        </ul>
 
         <h2>BEKIJK HET WEEKMENU</h2>
 
     </section>
 
-    <!----- start met de section 'Sinterklaas' ---->
+    <!------------------------------------------------------------------ start met de section 'Sinterklaas' ---->
 
     <section class="sinterklaas">
 
@@ -141,7 +145,7 @@
 
     </section>
 
-    <!----- start met de section inloggen met je account ---->
+    <!---------------------------------------------------------- start met de section inloggen met je account ---->
 
     <section class="inloggen">
 
@@ -155,6 +159,7 @@
     <!---- start met de section 'herfstrecepten' ---->
 
     <section class="herfstrecepten">
+
         <h1>HERFST RECEPTEN</h1>
 
         <p>Proef nu de herst met deze heerlijke herfstrecepten. Maak de recepten nu makkelijk en snel zelf en geniet van een heerlijke kom paddenstoelensoep, jachtschotel, of een quiche met pompoen bijvoorbeeld. Varieer dit seizoen met echte herfst groente en fruit zoals bramen, peer, paddensteoelen, kastanjes, pompoen en rode kool. Bekijk hier alle herfst recepten.</p>
@@ -175,15 +180,50 @@
 
     </section>
 
-    <!----- start van de footer --->
+    </main>
 
-    <footer>
+    <!---------------------------------------------------------------------------------- start van de footer --->
+
+    <footer class="eind">
 
         <h1>DE NIEUWSTE RECEPTEN IN JE MAIL?</h1>
         <p>Ontvang elke twee weken de gratis nieuwsbrief met de nieuwste recepten en tips!</p>
 
+        <label>
+            <input type=email placeholder="E-mailadres">
+        </label>
+        <hr>
+
+        <ul>
+            <li>GERECHTEN</li>
+            <li>TIJD</li>
+            <li>GEMAK</li>
+            <li>SOORT</li>
+            <li>DIEET</li>
+            <li>KEUKEN</li>
+            <li>THEMA</li>
+            <li>EXTRA THEMA</li>
+
+        </ul>
     </footer>
 
-</body>
+     <div class="tab">
+        <nav>
+            <ul>
+                <li><img src="images/bestek.jpg" alt="bestek">
+                    <span>NIEUW</span></li>
+                <li><img src="images/hartje.jpg" alt="hartje">
+                    <span>BEWAARD</span></li>
+                <li><img src="images/dish.jpg" alt="inspiratie">
+                    <span>INSPIRATIE</span></li>
+                <li><img src="images/search.jpg" alt="search">
+                    <span>ZOEK</span></li>
+                <li><img src="images/dots.jpg" alt="menu">
+                    <span>MENU</span></li>
+            </ul>
+        </nav>
+    </div>
 
-</html>
+    </body>
+
+    </html>

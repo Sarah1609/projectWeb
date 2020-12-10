@@ -9,6 +9,8 @@
     <title>Leuke recepten</title>
 
     <link href="styles/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -16,13 +18,30 @@
 
     <!------ start van de header ---->
 
-    <header>
+    <header class="start">
 
-        <img class="logo" src="images/logo.png" alt="logo">
+        <section class="header">
 
+            <img class="logo" src="images/logo.png" alt="logo">
+
+        </section>
+
+        <div>
+            <div>
+                <div>
+                    filters
+                </div>
+                <div>
+                    <span>Naam gerecht of ingredient</span>
+                    <span> zoek icoon</span>
+                </div>
+            </div>
+        </div>
     </header>
 
     <!------ start van de eerste introductie section ---->
+
+    <main class="detail">
 
     <section>
 
@@ -30,13 +49,12 @@
 
     </section>
 
-    <!------ start van 'uitleg' section ---->
     <section>
 
         <p>Klik op de 'Verras me' knop en laat je verrassen met een recept. Bekijk alle recepten verdeeld in categorieën in de 'Recepten index' en bekijk onderaan mijn nieuwe weekmenu.</p>
 
-        <p>VERRAS ME</p>
-        <p>RECEPTEN INDEX</p>
+        <h2>VERRAS ME</h2>
+        <h2>RECEPTEN INDEX</h2>
 
     </section>
 
@@ -46,20 +64,22 @@
 
         <h1>Populair</h1>
 
-        <img src="images/ovenschotel.jpg" alt="ovenschotels">
-        <p>Ovenschotels</p>
+        <ul>
 
-        <img src="images/pepernotentaart.jpg" alt="sinterklaas gerechten">
-        <p>Sinterklaas gerechten</p>
+            <li><img src="images/ovenschotel.jpg" alt="ovenschotels">
+                <span>Ovenschotels</span></li>
 
-        <img src="images/stampot.jpg" alt="stamppot recepten">
-        <p>Stamppot recepten</p>
+            <li><img src="images/pepernotentaart.jpg" alt="sinterklaas gerechten">
+                <span>Sinterklaas gerechten</span></li>
 
-        <img src="images/kerstrecepten.jpg" alt="kerstrecepten">
-        <p>Kerstrecepten</p>
+            <li><img src="images/stampot.jpg" alt="stamppot recepten">
+                <span>Stamppot recepten</span></li>
 
-    </section>
+            <li><img src="images/kerstrecepten.jpg" alt="kerstrecepten">
+                <span>Kerstrecepten</span></li>
+        </ul>
 
+        </section>
     <!------ start van de dropdownbox 'weekmenu' ---->
 
     <section>
@@ -71,25 +91,33 @@
     <!------ start van de section 'herfstrecepten' ---->
 
     <section class="herfstrecepten">
+
         <h1>HERFST RECEPTEN</h1>
 
         <p>Proef nu de herst met deze heerlijke herfstrecepten. Maak de recepten nu makkelijk en snel zelf en geniet van een heerlijke kom paddenstoelensoep, jachtschotel, of een quiche met pompoen bijvoorbeeld. Varieer dit seizoen met echte herfst groente en fruit zoals bramen, peer, paddensteoelen, kastanjes, pompoen en rode kool. Bekijk hier alle herfst recepten.</p>
 
-        <img src="images/vegastoofschoteljpg.jpg" alt="vegetarische stoofschotel">
-        <p>Vegetarische stoofschotel</p>
+        <ul>
 
-        <img src="images/pompoen.jpg" alt="pompoen crumble">
-        <p>Pompen crumble</p>
+            <li><img src="images/vegastoofschoteljpg.jpg" alt="vegetarische stoofschotel">
+                <span>Vegetarische stoofschotel</span></li>
 
-        <img src="images/spicerolls.jpg" alt="Pompoen kaneelbroodjes">
-        <p>Pompoen kaneelbroodjes</p>
+            <li><img src="images/pompoen.jpg" alt="pompoen crumble">
+                <span>Pompen crumble</span></li>
 
-        <img src="images/halloweencakje.jpg" alt="Pompoencakejes voor Halloween">
-        <p>Pompoencakejes voor Halloween</p>
+            <li><img src="images/spicerolls.jpg" alt="Pompoen kaneelbroodjes">
+                <span>Pompoen kaneelbroodjes</span></li>
 
-        <h1>MEER HERFST RECEPTEN</h1>
+            <li><img src="images/halloweencakje.jpg" alt="Pompoencakejes voor Halloween">
+                <span>Pompoencakejes voor Halloween</span></li>
+
+        </ul>
+
+
+        <h2>MEER HERFST RECEPTEN</h2>
 
     </section>
+
+    </main>
 
     <!------ start van de footer ---->
 
@@ -99,5 +127,22 @@
         <p>Ontvang elke twee weken de gratis nieuwsbrief met de nieuwste recepten en tips!</p>
 
     </footer>
+
+       <div class="tab">
+        <nav>
+            <ul>
+                <li><img src="images/bestek.jpg" alt="bestek">
+                    <span>NIEUW</span></li>
+                <li><img src="images/hartje.jpg" alt="hartje">
+                    <span>BEWAARD</span></li>
+                <li><img src="images/dish.jpg" alt="inspiratie">
+                    <span>INSPIRATIE</span></li>
+                <li><img src="images/search.jpg" alt="search">
+                    <span>ZOEK</span></li>
+                <li><img src="images/dots.jpg" alt="menu">
+                    <span>MENU</span></li>
+            </ul>
+        </nav>
+    </div>
 
 </body>
