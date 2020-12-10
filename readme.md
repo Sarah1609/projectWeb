@@ -71,10 +71,10 @@ Suzanne Reesink haar angedapunten:
 
 Susan van der Wiel haar agendapunten:
 
--Hoe los ik de witruimte op (nergens zit een grote width, height, margin of padding op)
--Hoe stijl ik de footer? Op internet staan alleen maar moeilijke dingen
--Hoe maak ik de functieloze groene balk onder de foto (en hoe gaat deze responsive mee?)
--Hoeveel classes mag je meegeven? Ik heb er nu 1 op de main van de detailpagina, mag dat wel?
+- Hoe los ik de witruimte op (nergens zit een grote width, height, margin of padding op)
+- Hoe stijl ik de footer? Op internet staan alleen maar moeilijke dingen
+- Hoe maak ik de functieloze groene balk onder de foto (en hoe gaat deze responsive mee?)
+- Hoeveel classes mag je meegeven? Ik heb er nu 1 op de main van de detailpagina, mag dat wel?
 
 Sarah de Moes (ik) haar agendapunten:
 
@@ -82,6 +82,10 @@ Sarah de Moes (ik) haar agendapunten:
 - Hoe maak ik me tabbar sticky
 - Hoe fix ik me tabbar goed
 - Hoe maak ik de dropdown zoals op de website
+
+### Verslag van meeting
+
+Voortgangsgesprek gehad met Iris en die kon me niet helpen met de lijnen (::before&::after), moet Janno hiervoor aanspreken. Verder moet ik eerst alle content in de dropdownbox zetten en dan kan ik verder geholpen worden met het stijlen. Verder goed op weg.
 
 ## Voortgang 1 (week 3)
 

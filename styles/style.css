@@ -140,6 +140,11 @@ width: 3em;
     margin-bottom: 50px;
 }
 
+h1::before {
+    background-color: black;
+    height: 5px;
+
+}
 
 /* hier begint de CSS van de section 'introductie' */
 
@@ -283,7 +288,9 @@ input {
     height: 30px;
 }
 
+.tab > nav > ul > li > img:last-of-type {
 
+}
 
 
 .tab > nav > ul > li > span {
