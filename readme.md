@@ -25,8 +25,33 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ## Voortgang 3 (week 6)
 
--same as voortgang 1-
+<b> Dit ging er goed </b>
 
+Het is me gelukt om hartjes iconen toe te voegen aan de homepagina. Door middel van Javascript heb ik het voor elkaar gekregen om de hartjes te animeren zodat ze op en neer gaan als er op geklikt wordt. Daarnaast heb ik met hulp van Janno de lijnen ook goed in me website kunnen zetten met de ::before en ::after elementen.
+
+<b> Dit ging er minder goed </b>
+
+Ik loop nu nog vast bij de dropdown menu's in de footer en op de inspiratiepagina van Sandra & Eric's weekmenu. Van Janno mag ik dit laten voor wat het is maar ik wil het toch graag proberen.
+
+**Screenshot(s):
+
+<img src="images.readme/voortgang3home.png">
+<img src="images.readme/voortgang3detail.png">
+
+<b> Uitleg </b>
+
+Me website is nu bijna zo goed als af. Me footer moet nog goed bewerkt worden en de laatste puntjes van CSS moet ik nog verbeteren zodat alles in een rechte lijnen staat. Nu moet ik me verder focussen op het responsive gedeelte van me website.
+
+### Agenda voor meeting
+
+De meiden hadden geen vragen voor deze meeting. Zelf had ik wel twee vragen voor Iris:
+
+- Hoe maak ik de dropdown zoals op de echte website vermeld is?
+- Hoe fix ik de hartjes op de website?
+
+### Verslag van meeting
+
+Door middel van het goed inspecteren naar de echte website is het me gelukt om de hartjes goed te laten werken en op hun plek te zetten. Ik heb van Iris een paar websites gehad waar ik naar kan kijken voor de dropdown menu.
 
 
 ## Voortgang 2 (week 5)

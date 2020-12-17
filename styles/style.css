@@ -37,6 +37,12 @@ h1 {
     font-family: 'Zilla Slab', sans-serif;
 }
 
+hr {
+    border-bottom: solid 1px #000;
+    margin-bottom: 0.6em;
+    margin-top: 0.6em;
+}
+
 
 /* hier begint de CSS van de header */
 
@@ -117,10 +123,11 @@ align-items: center;
 height: 3em;
 width: 3em;
 }
+
 /* hier begint de CSS van de eerste section 'nieuw' */
 
 
-.foto1 {
+main > section > section > img {
     display: flex;
     justify-content: center;
     margin-top: 30px;
@@ -128,22 +135,24 @@ width: 3em;
     height: auto;
 }
 
-.foto2 {
-    display: flex;
-    justify-content: center;
-    max-width: 100%;
-    height: auto;
+main > section > section > h2 {
+    font-size: 1.6em;
+    font-family: "Zilla Slab", sans-serif;
+    margin-left: 0.6em;
+    margin-bottom: 0.6em;
 }
 
-.nieuw {
-    margin-top: 50px;
-    margin-bottom: 50px;
+.streep {
+    margin-top: 30px;
 }
 
-h1::before {
-    background-color: black;
-    height: 5px;
-
+.streep::before, .streep::after {
+    content:"";
+    border-bottom: 3px solid grey;
+    width: 6em;
+    margin-bottom: .5em;
+    margin-left: 1em;
+    margin-right: 1em;
 }
 
 /* hier begint de CSS van de section 'introductie' */
@@ -168,18 +177,69 @@ main > section:nth-of-type(2) > p {
     line-height: 25px;
 }
 
+
 /* hier begint de CSS van de section 'recepten' */
 
-.recepten {
-    margin-top: 50px;
+main > section:nth-of-type(3) {
+    margin-top: 30px;
     margin-bottom: 50px;
 }
 
-.foto3 {
+main > section:nth-of-type(3) > div > img {
     display: flex;
     justify-content: center;
     max-width: 100%;
     height: auto;
+}
+
+path {
+    fill: white;
+    color: aqua;
+    z-index: 4;
+    transform-origin: center;
+}
+
+main > section:nth-of-type(3) > div {
+    position: relative;
+    max-width: 100%;
+    height: auto;
+}
+
+svg {
+    position: absolute;
+    width: 3em;
+    height: 3em;
+    background-color: grey;
+    border-radius: 5em 5em 5em 5em;
+    right: .5em;
+    top: .8em;
+
+}
+
+.hartjeAnimation {
+    background-color: aqua;
+}
+
+.hartjeAnimation path {
+    animation: hartpulse 1s infinite;
+
+}
+
+@keyframes hartpulse {
+    0%{
+        transform:scale(1, 1);
+
+    }
+
+    50%{
+        transform:scale(2, 2);
+
+    }
+
+    100%{
+        transform:scale(1, 1);
+
+    }
 }
 
 /* hier begint de CSS van de section 'populair' */
@@ -189,17 +249,39 @@ main > section:nth-of-type(4) ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-content: center;
+    width: 80%;
+    margin-left: 10%;
 
 }
+
 
 main > section:nth-of-type(4) li {
     display: flex;
     flex-wrap: wrap;
     text-decoration: none;
-    padding: 10px;
+    padding: 0.3em 0.6em;
     justify-content: center;
     border: solid #000000 .1em;
-    margin: .2em;
+    margin: .5em;
+    font-size: .8em;
+
+}
+
+main > section:nth-of-type(4) li:hover {
+    color: white;
+    background-color: black;
+}
+
+main > section:nth-of-type(4) a {
+    display: flex;
+    justify-content: center;
+    font-family: "helvetica", sans-serif;
+    margin: 2em 5em 2em 5em;
+    background: black;
+    padding: 9px 16px;
+    text-decoration: none;
+    color: #FFFFFF;
 }
 
 
@@ -212,51 +294,146 @@ main > section:nth-of-type(4) li {
     height: auto;
 }
 
-.sinterklaas {
+main > section:nth-of-type(5) {
     background: #dde9e8;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 /* hier begint de CSS van de section 'inloggen' */
 
-main > section:nth-of-type(4) > h2,
-section:nth-of-type(6) > h2 {
+main > section:nth-of-type(6) p {
     display: flex;
     justify-content: center;
-    align-items: center;
-    background-color: black;
-    font-family: 'Zilla Slab', sans-serif;
-    color: white;
-    width: 300px;
-    height: 40px;
-    margin: 20px 20px 20px 40px;
+    width: 296px;
+    height: 54px;
+    margin-left: 40px;
+
+}
+
+main > section:nth-of-type(6) a {
+    display: flex;
+    justify-content: center;
+    font-family: "helvetica", sans-serif;
+    margin: 2em 5em 2em 5em;
+    background: black;
+    padding: 9px 16px;
+    text-decoration: none;
+    color: #FFFFFF;
 }
 
 /* hier begint de CSS van de section 'herstrecepten' */
 
-.foto5 {
-    display: flex;
-    justify-content: center;
-    max-width: 100%;
-    height: auto;
-}
-
-.herfstrecepten {
+main > section:nth-of-type(7) {
+    padding-top: 20px;
+    padding-bottom: 20px;
     background: #658f89;
 }
 
-/* hier begint de CSS van de footer */
-
-.eind {
-    background: #dde9e8;
+main > section:nth-of-type(7) p {
+    margin-top: 1.5em;
+    width: 90%;
+    margin-left: .8em;
+    text-align: center;
+    color: #FFFFFF;
+    line-height: 1.75em;
 }
 
-input {
-    width: 300px;
-    height: 30px;
-    border-radius: 5px 5px 5px 5px;
+main > section:nth-of-type(7) h1 {
+    color: #FFFFFF;
+    font-size: 1.25em;
+}
+
+main > section:nth-of-type(7) > ul {
+    display:flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: center;
+}
+
+main > section:nth-of-type(7) > ul > li {
+    flex-basis: 30%;
+    margin-left: 10px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+main > section:nth-of-type(7) > ul > li > img {
+    width: 150px;
+    height: 110px;
+}
+
+main > section:nth-of-type(7) > ul > li > span {
+    display:flex;
+    font-family: 'OpenSans-Light', sans-serif;
+    font-size: 15px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+main > section:nth-of-type(7) a {
+    display: flex;
+    font-family: "helvetica", sans-serif;
+    text-align: center;
+    padding: 9px 10px;
+    width: 250px;
+    margin-left: 15%;
+    background: white;
+    text-decoration: none;
+    color: #000000;
+}
+
+
+/* hier begint de CSS van de footer */
+
+footer {
+    background: #dde9e8;
+    padding-top: 1.25em;
+    margin-top: 1.25em;
+    margin-bottom: 15vh;
+}
+
+footer > p {
+    font-size: 1em;
+    text-align: center;
+    width: 90%;
+}
+
+footer > h1 {
+    font-size: 1.40em;
+    text-align: center;
+}
+
+footer > label > input {
+    display: flex;
+    align-items: center;
+    height: 1.9em;
+    width: 90%;
+    font-size: 1em;
+    margin-left: 5%;
+    border-radius: .5em .5em .5em .5em;
     border-style: none;
 }
 
+footer > a {
+    display: flex;
+    justify-content: center;
+    font-family: "helvetica", sans-serif;
+    margin: 2em 5em 2em 5em;
+    background: black;
+    padding: 9px 16px;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+footer > a:nth-of-type(2),
+a:nth-of-type(3),
+a:nth-of-type(4),
+a:nth-of-type(5) {
+    font-size: .75em;
+    background: none;
+    color: black;
+    margin: .5em 2em .5em 2em;
+}
 /* hier begint de CSS van de tabbar */
 
 .tab  {
@@ -318,8 +495,9 @@ input {
     align-items: center;
     background-color: black;
     font-family: 'Zilla Slab', sans-serif;
+    font-size: 15px;;
     color: white;
-    width: 300px;
+    width: 15em;
     height: 40px;
     margin: 20px 20px 20px 40px;
 }
@@ -351,6 +529,11 @@ input {
     text-align: center;
 }
 
+/* hier begint de CSS van het weekmenu Sandra&Eric */
+
+.detail > section > div > img {
+    width: 1em;
+}
 /* hier begint de CSS van de herfstrecepten van de detailpagina */
 
 .detail > section:nth-of-type(5) > p {
@@ -385,4 +568,15 @@ input {
     font-size: 15px;
     text-align: center;
     color: #ffffff;
+}
+
+.detail > section:nth-of-type(2) a {
+    display: flex;
+    justify-content: center;
+    font-family: "helvetica", sans-serif;
+    margin: 2em 5em 2em 5em;
+    background: black;
+    padding: 9px 16px;
+    text-decoration: none;
+    color: #FFFFFF;
 }
