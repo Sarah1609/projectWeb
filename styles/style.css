@@ -46,82 +46,184 @@ hr {
 
 /* hier begint de CSS van de header */
 
-.logo {
-    width: 200px;
-    max-width: 100%;
-    height: auto;
+.start section:first-of-type {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2em;
 }
 
-.header {
+.start section:first-of-type > * {
+    width: 33%;
+}
+
+.start section:first-of-type > div:last-of-type {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.start section:first-of-type > div:last-of-type > a:first-of-type {
+    border: solid 2px black;
+    background: white;
+    color: black;
+    margin: 1em;
+    padding: .7em;
+    font-family: "OpenSans-Light", sans-serif;
+    text-decoration: none;
+}
+
+.start section:first-of-type > div:last-of-type > a:last-of-type {
+    border: solid 2px black;
+    background: black;
+    color: white;
+    margin: 1em;
+    padding: .7em;
+    font-family: "OpenSans-Light", sans-serif;
+    text-decoration: none;
+}
+
+.start section:first-of-type > div:last-of-type > a:first-of-type:hover,
+.start section:first-of-type > div:last-of-type > a:last-of-type:hover,
+.start > section > div:first-of-type > img:hover {
+    color: white;
+    background-color: rgba(101, 143, 137, 0.75);
+    border: solid 2px white;
+}
+
+
+.start > section > div:first-of-type > img {
+    width: 1em;
+    margin: .6em;
+    margin-top: 2em;
+}
+
+
+/* dit is CSS voor de verborgen tabbar wat uitschuift na 1040px */
+
+.start > .headertab > nav > ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.start > .headertab > nav > ul > li {
+    list-style: none;
+    font-family: "OpenSans-Light", sans-serif;
+}
+
+.start > .headertab details > summary {
+    display: flex;
+    flex-direction: row;
+    font-weight: normal;
+    font-family: "OpenSans-Light", sans-serif;
+    font-weight: normal;
+}
+
+/* hier begint de CSS van de search balk voor zowel 1040 px als klein */
+
+.filter {
+    flex-direction: column;
+    background-image: url(../images/header.jpg);
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    max-width: 100%;
-    height: auto;
+    height: 15em;
+    width: 100vw;
 }
 
-.start {
+.filter > div {
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2em;
+    background-color: rgba(255, 255, 255, 0.75);
 }
 
-.eten {
+.filter > div > div {
     display: flex;
-    height: 170px;
+    flex-direction: row;
+    align-items: center;
+    width: 85vw;
+    height: 3em;
+
 }
 
-.start > div {
-
-background-image: url(../images/header.jpg);
-background-size: cover;
-display: flex;
-justify-content: center;
-align-items: center;
-height: 15em;
-width: 100vw;
+.filter > div > div:first-of-type {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: black;
+    margin-bottom: 1em;
 }
 
-.start >  div > div{
-
-background-color: rgba(255, 255, 255, 0.75);
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: space-around;
-padding: 16px;
-height: 150px;
-width: 85vw;
+.filter > div > div:first-of-type > span {
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }
 
-.start > div > div > div{
+.filter > div > div:first-of-type > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 
-  height: 3em;
-  width: 60vw;
-  background-color: black;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
-.start > div > div > div > span:nth-of-type(1){
-
-background-color: white;
-color: black;
-width: 100%;
-height: 100%;
-display: flex;
-justify-content: center;
-align-items: center;
+.filter > div > div:last-of-type img {
+    height: 1.5em;
+    width: 1.5em;
+    margin-top: .8em;
+    margin-left: .5em;
 }
 
+.filter > div > div:last-of-type form,
+.filter > div > div:last-of-type input {
+    width: 110%;
+    height: inherit;
+    border: solid 1px white;
+}
 
-.start > div > div > div > span:nth-of-type(2) {
+.filter a {
+    display: flex;
+    align-items: center;
+    background-color: black;
+    color: white;
+    width: 20%;
+    height: 100%;
+    padding: 1em;
+    margin-left: 2em;
+    text-decoration: none;
 
-height: 3em;
-width: 3em;
+}
+
+.filter a:hover {
+    color: white;
+    background-color: rgba(101, 143, 137, 0.75);
+    border: solid 2px white;
+}
+
+.filter > div > div:first-of-type > div {
+    width: 100%;
+}
+
+.filter details {
+    width: 30%;
+    border: solid 2px black;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-bottom: 2em;
+
+}
+
+.filter summary {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .6em;
 }
 
 /* hier begint de CSS van de eerste section 'nieuw' */
@@ -135,7 +237,7 @@ main > section > section > img {
     height: auto;
 }
 
-main > section > section > h2 {
+main > section > section h2 {
     font-size: 1.6em;
     font-family: "Zilla Slab", sans-serif;
     margin-left: 0.6em;
@@ -146,8 +248,9 @@ main > section > section > h2 {
     margin-top: 30px;
 }
 
-.streep::before, .streep::after {
-    content:"";
+.streep::before,
+.streep::after {
+    content: "";
     border-bottom: 3px solid grey;
     width: 6em;
     margin-bottom: .5em;
@@ -226,18 +329,18 @@ svg {
 }
 
 @keyframes hartpulse {
-    0%{
-        transform:scale(1, 1);
+    0% {
+        transform: scale(1, 1);
 
     }
 
-    50%{
-        transform:scale(2, 2);
+    50% {
+        transform: scale(2, 2);
 
     }
 
-    100%{
-        transform:scale(1, 1);
+    100% {
+        transform: scale(1, 1);
 
     }
 }
@@ -273,7 +376,7 @@ main > section:nth-of-type(4) li:hover {
     background-color: black;
 }
 
-main > section:nth-of-type(4) a {
+main >  a {
     display: flex;
     justify-content: center;
     font-family: "helvetica", sans-serif;
@@ -302,12 +405,14 @@ main > section:nth-of-type(5) {
 
 /* hier begint de CSS van de section 'inloggen' */
 
+main > section:nth-of-type(6) h1 {
+    margin-top: 1em;
+}
+
 main > section:nth-of-type(6) p {
-    display: flex;
-    justify-content: center;
-    width: 296px;
-    height: 54px;
-    margin-left: 40px;
+    text-align: center;
+    margin-left: .5em;
+    width: 15em;
 
 }
 
@@ -345,7 +450,7 @@ main > section:nth-of-type(7) h1 {
 }
 
 main > section:nth-of-type(7) > ul {
-    display:flex;
+    display: flex;
     flex-wrap: wrap;
     list-style: none;
     justify-content: center;
@@ -353,30 +458,42 @@ main > section:nth-of-type(7) > ul {
 
 main > section:nth-of-type(7) > ul > li {
     flex-basis: 30%;
-    margin-left: 10px;
-    margin-right: 20px;
-    margin-bottom: 20px;
+    margin-right: 2em;
+    margin-left: .5em;
 }
-main > section:nth-of-type(7) > ul > li > img {
-    width: 150px;
-    height: 110px;
+
+main > section:nth-of-type(7) > ul > li > .link > img {
+    width: 10em;
+    height: 6em;
+}
+
+main > section:nth-of-type(7) > ul > li > .link {
+    display: flex;
+    justify-content: center;
+    margin-left: .4em;
+    margin-top: .2em;
+    background: none;
+    width: 10em;
+    height: 6em;
 }
 
 main > section:nth-of-type(7) > ul > li > span {
-    display:flex;
+    display: flex;
     font-family: 'OpenSans-Light', sans-serif;
-    font-size: 15px;
+    margin-top: 1em;
+    font-size: .8em;
     text-align: center;
     color: #FFFFFF;
 }
 
-main > section:nth-of-type(7) a {
+main > section:nth-of-type(7) .balk {
     display: flex;
     font-family: "helvetica", sans-serif;
     text-align: center;
     padding: 9px 10px;
     width: 250px;
-    margin-left: 15%;
+    margin-left: 5em;
+    margin-top: 2em;
     background: white;
     text-decoration: none;
     color: #000000;
@@ -414,6 +531,24 @@ footer > label > input {
     border-style: none;
 }
 
+footer > details {
+    line-height: 3em;
+
+}
+
+footer > details > summary {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: .8em;
+
+}
+
+footer > details > summary > span {
+    width: 100px;
+}
+
+
 footer > a {
     display: flex;
     justify-content: center;
@@ -434,12 +569,26 @@ a:nth-of-type(5) {
     color: black;
     margin: .5em 2em .5em 2em;
 }
+
+/* dit is een code van https://css-tricks.com/quick-reminder-that-details-summary-is-the-easiest-way-ever-to-make-an-accordion/ om de pijltjes te veranderen van de summary. Het werkt alleen niet
+summary {
+    font-weight: bold;
+    list-style-image: url(../images/dropdown.png);
+}
+
+summary::-webkit-details-marker {
+    background: url(../images/dropdown.png);
+    color: black;
+}
+
+*/
+
 /* hier begint de CSS van de tabbar */
 
-.tab  {
+.tab {
     position: fixed;
     bottom: 0%;
-    width: 100vh;
+    width: 100vw;
     background-color: #6e8d88;
 }
 
@@ -449,29 +598,32 @@ a:nth-of-type(5) {
     list-style: none;
     display: flex;
     flex-direction: wrap;
-    margin: 0px 15px 0px 15px;
+    margin: 0px 20px 0px 20px;
 }
 
 .tab > nav > ul {
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     padding: 10px 10px 10px 10px;
-    width: 10px;
+    width: 100vw;
 }
 
 .tab > nav > ul > li > img {
     display: flex;
+    flex-direction: wrap;
     align-items: center;
+    margin: 0px 5px 0px 5px;
     width: 30px;
     height: 30px;
 }
 
-.tab > nav > ul > li > img:last-of-type {
-
+.tab > nav > ul > li > .tab5 {
+    width: 15px;
 }
 
-
 .tab > nav > ul > li > span {
-    display:flex;
+    display: flex;
     flex-direction: row;
     font-size: 10px;
     color: #FFFFFF;
@@ -495,7 +647,8 @@ a:nth-of-type(5) {
     align-items: center;
     background-color: black;
     font-family: 'Zilla Slab', sans-serif;
-    font-size: 15px;;
+    font-size: 15px;
+    ;
     color: white;
     width: 15em;
     height: 40px;
@@ -505,7 +658,7 @@ a:nth-of-type(5) {
 /* hier begint de CSS van populair van de detailpagina */
 
 .detail > section:nth-of-type(3) > ul {
-    display:flex;
+    display: flex;
     flex-wrap: wrap;
     list-style: none;
     justify-content: center;
@@ -517,13 +670,14 @@ a:nth-of-type(5) {
     margin-right: 20px;
     margin-bottom: 20px;
 }
+
 .detail > section:nth-of-type(3) > ul > li > img {
     width: 150px;
     height: 110px;
 }
 
 .detail > section:nth-of-type(3) > ul > li > span {
-    display:flex;
+    display: flex;
     font-family: 'OpenSans-Light', sans-serif;
     font-size: 15px;
     text-align: center;
@@ -531,20 +685,28 @@ a:nth-of-type(5) {
 
 /* hier begint de CSS van het weekmenu Sandra&Eric */
 
-.detail > section > div > img {
-    width: 1em;
+.detail > section:nth-of-type(4) > details > summary {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-family: 'Zilla Slab', sans-serif;
+    font-size: 1.5em;
 }
+
+
 /* hier begint de CSS van de herfstrecepten van de detailpagina */
 
 .detail > section:nth-of-type(5) > p {
     color: #ffffff;
     text-align: center;
     margin-top: 24px;
-    font-size: 10px;;
+    font-size: 10px;
+    ;
     line-height: 1.75;
 }
+
 .detail > section:nth-of-type(5) > ul {
-    display:flex;
+    display: flex;
     flex-wrap: wrap;
     list-style: none;
     justify-content: center;
@@ -556,6 +718,7 @@ a:nth-of-type(5) {
     margin-right: 20px;
     margin-bottom: 20px;
 }
+
 .detail > section:nth-of-type(5) > ul > li > img {
     margin-left: 10px;
     width: 150px;
@@ -563,7 +726,7 @@ a:nth-of-type(5) {
 }
 
 .detail > section:nth-of-type(5) > ul > li > span {
-    display:flex;
+    display: flex;
     font-family: 'OpenSans-Light', sans-serif;
     font-size: 15px;
     text-align: center;
@@ -579,4 +742,101 @@ a:nth-of-type(5) {
     padding: 9px 16px;
     text-decoration: none;
     color: #FFFFFF;
+}
+
+/* hier begint de CSS van de media quary's */
+
+/* dit is de CSS voor als het scherm groter dan 1040px wordt */
+
+@media (min-width:1040px) {
+    .tab {
+        visibility: hidden;
+    }
+
+    .filter > div > div:first-of-type > span {
+        position: absolute;
+        visibility: hidden;
+    }
+
+    .filter > div > div:first-of-type {
+        color: black;
+        background-color: transparent;
+    }
+
+    main > section:first-of-type > section  {
+        display: flex;
+        flex-direction: row;
+        width: 60vw;
+    }
+
+    main > section:first-of-type > section > div > p {
+        width: 35vw;
+        margin-top: 2em;
+    }
+
+    main > section:nth-of-type(3) > div {
+        width: 49vw;
+    }
+
+    main > .recepten {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    main > .populair {
+        width: 80vw;
+        font-size: 1.5em;
+    }
+
+    main > a {
+        width: 49vw;
+    }
+
+}
+
+/* dit is de CSS voor als het scherm kleiner wordt dan 1040px */
+
+@media (max-width:1040px) {
+    .headertab {
+        position: absolute;
+        visibility: hidden;
+    }
+
+    .filter > div > div:first-of-type > div {
+        position: absolute;
+        visibility: hidden;
+    }
+
+    .filter > div > div:last-of-type > a > span {
+        position: absolute;
+        visibility: hidden;
+    }
+
+    .filter > div > div:last-of-type > a:nth-of-type(2) {
+        position: absolute;
+        visibility: hidden;
+    }
+
+    .start > section:first-of-type > div {
+        visibility: hidden;
+    }
+
+    .start section:first-of-type {
+        width: 100vw;
+        height: 7em;
+        margin-left: 3em;
+
+    }
+
+      .start section:first-of-type > img {
+        justify-content: center;
+        width: 20em;
+        height: 7em;
+
+    }
+
+    hr:first-of-type {
+        visibility: hidden;
+    }
 }

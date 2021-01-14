@@ -10,16 +10,28 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 2. <https://www.w3schools.com/howto/howto_css_style_hr.asp>
 3. <https://www.handleidinghtml.nl/css/eigenschappen/color/voorbeelden.html>
 4. <https://css-tricks.com/line-on-sides-headers/>
+5. <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details>
 
 
 
 ## Eindgesprek (week 7/8)
 
--dit ging goed & dit was lastig-
+<b> Dit ging er goed </b>
 
-**Screenshot(s):**
+Ik had er veel tijd voor nodig om te begrijpen hoe de media query's werkte. Het is me uiteindelijk wel gelukt om een gedeeltelijke mooie responsive website te maken. Het is helaas nog niet af, door tijdgebrek. Ik ga voor de herkansing een mooi geheel maken van de website die responsive is.
 
--screenshot(s) van je eindresultaat-
+<b> Dit ging er minder goed </b>
+
+Ik merkte al snel doordat ik ging werken met media query's dat ik veel html moest aanpassen zodat het logisch was en het allemaal op ze plek bleef staan. Dit zorgde er voor dat ik extra tijd nodig had voor het aanpassen van me html.
+
+**Screenshot(s):
+
+<img src="images.readme/eindbeoordeling.png">
+<img src="images.readme/eindbeoordeling1.png">
+
+<b> Uitleg </b>
+
+Me website is nu bijna zo goed als af. Me footer moet nog goed bewerkt worden en de laatste puntjes van CSS moet ik nog verbeteren zodat alles in een rechte lijnen staat. Nu moet ik me verder focussen op het responsive gedeelte van me website.
 
 
 
