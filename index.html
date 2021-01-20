@@ -39,21 +39,17 @@
 
         </section>
 
-        <hr>
+        <hr class="eerste">
 
         <div class="headertab">
             <nav>
                 <ul>
                     <li>HOME</li>
                     <li>RECEPTEN</li>
-                    <details>
-                        <summary>MENUGANG</summary>
-                    </details>
+                    <li>MENUGANG</li>
                     <li>INSPIRATIE</li>
                     <li>TOP 10</li>
-                    <details>
-                        <summary>BLOG</summary>
-                    </details>
+                    <li>BLOG</li>
                     <li>VIDEOS</li>
                     <li>OVER ONS</li>
                 </ul>
@@ -114,32 +110,32 @@
 
             <h1 class="streep">Nieuw</h1>
 
-            <section>
+            <section class="inspo">
 
 
                 <img src="images/broodbakken.jpg" alt="10 x broodbakken">
 
-                <div>
+                <section>
 
                     <p>INSPIRATIE</p>
-                    <h2> 10 x broodrecepten om zelf te bakken</h2>
+                    <p> 10 x broodrecepten om zelf te bakken</p>
                     <p>zelf brood maken hoeft niet moeilijk of ingewikkeld te zijn. Met deze 10 recepten maak je zelf een heerlijk vers brood, soms al binnen 30 minuten.</p>
 
-                </div>
+                </section>
 
             </section>
 
-            <section>
+            <section class="inspo">
 
                 <img class="foto2" src="images/kookmutsje.jpg" alt="kookmutsje">
 
-                <div>
+                <section>
 
                     <p>REVIEWS</p>
-                    <h2>Marrokaanse boterkoek + boekreview Kookmutsjes</h2>
+                    <p>Marrokaanse boterkoek + boekreview Kookmutsjes</p>
                     <p>Het is weer tijd voor een leuke en lekkere boekreview. Deze keer een mooi nieuw boek van de zussen Najat en Nadia van de populaire Facebookgroep Kookmuts.</p>
 
-                </div>
+                </section>
             </section>
 
         </section>
@@ -150,22 +146,26 @@
 
         <section class="intro">
 
-            <img class="auteur" src="images/intro.png" alt="auteur">
+            <img src="images/intro.png" alt="auteur">
 
-            <h1>WELKOM</h1>
+        </section>
+
+        <article>
+
+            <h2>WELKOM</h2>
 
             <p>Leuk dat je mijn site bezoekt. Met mijn recepten laat ik zien dat je makkelijk en met weinig ingrediënten een lekkere en verassende maaltijd op tafel kunt zetten. Lees hier meer over mij. <br>
                 <br>
 
                 Groetjes Sandra. </p>
 
-        </section>
+        </article>
 
         <!---------------------------------------------------------------------- start met de section 'recepten' ---->
 
-        <h1 class="streep">Recepten</h1>
+        <h3 class="streep">Recepten</h3>
 
-            <section class="recepten">
+        <section class="recepten">
 
             <div>
                 <img class="foto3" src="images/aardappel.jpg" alt="zoete aardappel gratin">
@@ -206,7 +206,7 @@
 
         <!-------------------------------------------------------------- start met de section 'populair' ----->
 
-        <h1 class="streep">Populair</h1>
+        <h4 class="streep">Populair</h4>
 
         <section class="populair">
 
@@ -223,35 +223,55 @@
 
             </ul>
 
-            </section>
-
             <a href="inspiratie.html"> HET WEEKMENU</a>
 
         </section>
 
         <!------------------------------------------------------------------ start met de section 'Sinterklaas' ---->
 
-        <section>
+        <section class="sint">
 
-            <h1> 3 x Sinterklaas recepten</h1>
+            <h5> 3 x Sinterklaas recepten </h5>
 
-            <img class="foto4" src="images/sinterklaasfudge.jpg" alt="sinterklaas fudge">
-            <p>Sinterklaas fudge</p>
-            <img class="foto4" src="images/pepernotentaart.jpg" alt="pepernoten taart">
-            <p>Sinterklaas pepernotentaart</p>
-            <img class="foto4" src="images/speculaastruffels.jpg" alt="sinterklaas truffels">
-            <p>Speculaas truffels</p>
+            <articel>
 
+                <img src="images/sinterklaasfudge.jpg" alt="sinterklaas fudge">
+                <p>Sinterklaas fudge</p>
+
+            </articel>
+
+            <articel>
+
+                <img src="images/pepernotentaart.jpg" alt="pepernoten taart">
+                <p>Sinterklaas pepernotentaart</p>
+
+            </articel>
+
+            <articel>
+
+                <img src="images/speculaastruffels.jpg" alt="sinterklaas truffels">
+                <p>Speculaas truffels</p>
+
+            </articel>
         </section>
+
 
         <!---------------------------------------------------------- start met de section inloggen met je account ---->
 
         <section>
 
-            <h1>INLOGGEN</h1>
+            <h6>INLOGGEN</h6>
+
+            <articel>
             <p>Meld je nu aan en bewaar je favoriete recepten op je eigen pagina</p>
+            </articel>
+
+
             <a href="inspiratie.html"> INLOGGEN </a>
-            <p>Nog geen account? Meld je hier aan</p>
+
+            <articel>
+                <p>Nog geen account? Meld je hier aan</p>
+            </articel>
 
         </section>
 
@@ -259,21 +279,21 @@
 
         <section>
 
-            <h1>HERFST RECEPTEN</h1>
+            <h6>HERFST RECEPTEN</h6>
 
             <p>Proef nu de herst met deze heerlijke herfstrecepten. Maak de recepten nu makkelijk en snel zelf en geniet van een heerlijke kom paddenstoelensoep, jachtschotel, of een quiche met pompoen bijvoorbeeld. Varieer dit seizoen met echte herfst groente en fruit zoals bramen, peer, paddensteoelen, kastanjes, pompoen en rode kool. Bekijk hier alle herfst recepten.</p>
 
             <ul>
-                <li><a class="link" href="inspiratie.html"><img class="foto5" src="images/vegastoofschoteljpg.jpg" alt="vegetarische stoofschotel"></a>
+                <li><a href="inspiratie.html"><img src="images/vegastoofschoteljpg.jpg" alt="vegetarische stoofschotel"></a>
                     <span>Vegetarische stoofschotel</span></li>
 
-                <li><a class="link" href="inspiratie.html"><img class="foto5" src="images/pompoen.jpg" alt="pompoen crumble"></a>
-                    <span>Pompen crumble</span></li>
+                <li><a href="inspiratie.html"><img src="images/pompoen.jpg" alt="pompoen crumble"></a>
+                    <span>Pompoen crumble</span></li>
 
-                <li><a class="link" href="inspiratie.html"><img class="foto5" src="images/spicerolls.jpg" alt="Pompoen kaneelbroodjes"></a>
+                <li><a href="inspiratie.html"><img src="images/spicerolls.jpg" alt="Pompoen kaneelbroodjes"></a>
                     <span>Pompoen kaneelbroodjes</span></li>
 
-                <li><a class="link" href="inspiratie.html"><img class="foto5" src="images/halloweencakje.jpg" alt="Pompoencakejes voor Halloween"></a>
+                <li><a href="inspiratie.html"><img src="images/halloweencakje.jpg" alt="Pompoencakejes voor Halloween"></a>
                     <span>Pompoencakejes voor Halloween</span></li>
 
             </ul>
@@ -288,7 +308,7 @@
 
     <footer>
 
-        <h1>DE NIEUWSTE RECEPTEN IN JE MAIL?</h1>
+        <h6>DE NIEUWSTE RECEPTEN IN JE MAIL?</h6>
         <p>Ontvang elke twee weken de gratis nieuwsbrief met de nieuwste recepten en tips!</p>
 
         <label>
@@ -369,6 +389,96 @@
             <p>Winter recepten</p>
         </details>
 
+        <section class="big">
+
+            <section>
+                <a href="inspiratie.html"> GERECHTEN</a>
+                <ul>
+                    <li>Ontbijt</li>
+                    <li>Lunch</li>
+                    <li>Voorgerechten</li>
+                    <li>Bijgerechten</li>
+                    <li>Hoofdgerechten</li>
+                    <li>Nagerechten</li>
+                    <li>Salades</li>
+                    <li>Bakrecepten</li>
+                    <li>Hapjes en snacks</li>
+                </ul>
+            </section>
+
+            <section>
+                <a href="inspiratie.html"> TIJD </a>
+                <ul>
+                    <li>0 tot 20 minuten</li>
+                    <li>20 tot 40 minuten</li>
+                    <li>40 tot 60 minuten</li>
+                    <li> 60 minuten +</li>
+                </ul>
+            </section>
+
+            <section>
+                <a href="inspiratie.html"> GEMAK </a>
+                <ul>
+                    <li>Gemakkelijk</li>
+                    <li>Gemiddeld</li>
+                    <li>Moeilijk</li>
+                </ul>
+            </section>
+
+            <section>
+                <a href="inspiratie.html"> SOORT </a>
+                <ul>
+                    <li>Kip</li>
+                    <li>Vis</li>
+                    <li>Vlees</li>
+                    <li>Vegetarische recepten</li>
+                    <li>Vegan recepten</li>
+                </ul>
+            </section>
+
+            <section>
+                <a href="inspiratie.html"> DIEET </a>
+                <ul>
+                    <li>Koolhydraatarme recepten</li>
+                    <li>Glutevrije recepten</li>
+                </ul>
+            </section>
+
+            <section>
+                <a href="inspiratie.html"> KEUKEN </a>
+                <ul>
+                    <li>Grieks</li>
+                    <li>Aziatisch</li>
+                    <li>Hollands</li>
+                    <li>Indisch</li>
+                    <li>Italiaans</li>
+                    <li>Marrokaans</li>
+                    <li>Mexicaans</li>
+                    <li>Spaans</li>
+                    <li>Turks</li>
+                    <li>Frans</li>
+                </ul>
+            </section>
+
+            <section>
+                <a href="inspiratie.html"> THEMA </a>
+                <ul>
+                    <li>Sinterklaasrecepten</li>
+                    <li>Kerstrecepten</li>
+                    <li>Oud en nieuw recepten</li>
+                </ul>
+            </section>
+
+            <section>
+                <a href="inspiratie.html"> EXTRA THEMA </a>
+                <ul>
+                    <li>Herfst recepten</li>
+                    <li> Winter recepten</li>
+                </ul>
+            </section>
+
+        </section>
+
         <hr>
 
         <a href="inspiratie.html">Contact</a>
@@ -395,7 +505,8 @@
         </nav>
     </div>
 
+    <script src="scripts/script.js"></script>
+
 </body>
-<script src="scripts/script.js"></script>
 
 </html>

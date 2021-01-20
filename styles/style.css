@@ -13,29 +13,13 @@ html {
 }
 
 body {
-    height: 100%;
+width: 100vw;
+overflow-x: hidden;
 }
 
 /* hier begint de CSS van de eerste homepagina*/
 
 /* hier begint de CSS van algemene onderdelen over de hele pagina */
-
-
-p {
-    display: flex;
-    margin-top: 5px;
-    margin-bottom: 20px;
-    margin-left: 10px;
-    font-family: 'OpenSans-Light', sans-serif;
-}
-
-
-h1 {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
-    font-family: 'Zilla Slab', sans-serif;
-}
 
 hr {
     border-bottom: solid 1px #000;
@@ -212,11 +196,11 @@ hr {
 
 .filter details {
     width: 30%;
+    max-width: 100vw;
     border: solid 2px black;
     margin-left: 1em;
     margin-right: 1em;
     margin-bottom: 2em;
-
 }
 
 .filter summary {
@@ -237,11 +221,28 @@ main > section > section > img {
     height: auto;
 }
 
-main > section > section h2 {
-    font-size: 1.6em;
-    font-family: "Zilla Slab", sans-serif;
+main > section > h1 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.25em;
+    font-family: 'Zilla Slab', sans-serif;
+}
+
+main > section > .inspo > section > p:first-of-type,
+main > section > .inspo > section > p:nth-of-type(3) {
+    font-size: 1em;
+    font-family: "OpenSans-Light", sans-serif;
     margin-left: 0.6em;
-    margin-bottom: 0.6em;
+
+}
+
+main > section > .inspo > section > p:nth-of-type(2) {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.25em;
+    font-family: 'Zilla Slab', sans-serif;
+    font-size: 1.7em;
+    margin-left: 0.6em;
 }
 
 .streep {
@@ -260,28 +261,45 @@ main > section > section h2 {
 
 /* hier begint de CSS van de section 'introductie' */
 
-.auteur {
-    width: 150px;
-    position: relative;
-    left: 30%;
-    margin-bottom: 20px;
-
-}
-
 .intro {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
 }
 
-main > section:nth-of-type(2) > p {
+main > .intro > img {
+    width: 30vh;
+    margin-bottom: 1.25em;
+    margin-top: 1.25em;
+
+}
+
+main > article > h2 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-family: 'Zilla Slab', sans-serif;
+    font-size: 1.5em;
+}
+
+main > article > p {
     display: block;
     margin: 5px 25px 5px 25px;
     text-align: center;
-    line-height: 25px;
+    line-height: 1.5em;
+    font-size: 1em;
+    font-family: 'OpenSans-Light', sans-serif;
 }
 
 
 /* hier begint de CSS van de section 'recepten' */
+
+main > h3 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-family: 'Zilla Slab', sans-serif;
+    font-size: 1.5em;
+}
 
 main > section:nth-of-type(3) {
     margin-top: 30px;
@@ -293,6 +311,12 @@ main > section:nth-of-type(3) > div > img {
     justify-content: center;
     max-width: 100%;
     height: auto;
+}
+
+main > section:nth-of-type(3) > div > p {
+    line-height: 1.5em;
+    font-size: 1em;
+    font-family: 'OpenSans-Light', sans-serif;
 }
 
 path {
@@ -348,6 +372,14 @@ svg {
 /* hier begint de CSS van de section 'populair' */
 
 
+main > h4 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-family: 'Zilla Slab', sans-serif;
+    font-size: 1.5em;
+}
+
 main > section:nth-of-type(4) ul {
     display: flex;
     flex-wrap: wrap;
@@ -357,7 +389,6 @@ main > section:nth-of-type(4) ul {
     margin-left: 10%;
 
 }
-
 
 main > section:nth-of-type(4) li {
     display: flex;
@@ -376,7 +407,7 @@ main > section:nth-of-type(4) li:hover {
     background-color: black;
 }
 
-main >  a {
+main > section:nth-of-type(4) > a {
     display: flex;
     justify-content: center;
     font-family: "helvetica", sans-serif;
@@ -390,30 +421,52 @@ main >  a {
 
 /* hier begint de CSS van de section 'Sinterklaas' */
 
-.foto4 {
+main > .sint > h5 {
     display: flex;
     justify-content: center;
-    max-width: 100%;
-    height: auto;
+    margin-bottom: 20px;
+    font-family: 'Zilla Slab', sans-serif;
+    font-size: 1.5em;
 }
 
-main > section:nth-of-type(5) {
+main > .sint {
     background: #dde9e8;
     padding-top: 20px;
     padding-bottom: 20px;
 }
 
-/* hier begint de CSS van de section 'inloggen' */
-
-main > section:nth-of-type(6) h1 {
-    margin-top: 1em;
+main > .sint > articel > img {
+    width: 100vw;
 }
 
-main > section:nth-of-type(6) p {
+main > .sint > articel > p {
+    font-size: 1em;
+    font-family: "OpenSans-Light", sans-serif;
+    margin-left: 0.6em;
+}
+
+/* hier begint de CSS van de section 'inloggen' */
+
+main > section:nth-of-type(6) > h6 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-family: 'Zilla Slab', sans-serif;
+    font-size: 1.5em;
+    margin-top: 2em;
+}
+
+main > section:nth-of-type(6) > articel {
+    display: flex;
+    justify-content: center;
+}
+
+main > section:nth-of-type(6) > articel > p {
     text-align: center;
     margin-left: .5em;
     width: 15em;
-
+    font-family: "OpenSans-Light", sans-serif;
+    margin-bottom: 1em;
 }
 
 main > section:nth-of-type(6) a {
@@ -427,7 +480,17 @@ main > section:nth-of-type(6) a {
     color: #FFFFFF;
 }
 
+
 /* hier begint de CSS van de section 'herstrecepten' */
+
+main > section:nth-of-type(7) > h6 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-family: 'Zilla Slab', sans-serif;
+    color: #FFFFFF;
+    font-size: 1.5em;
+}
 
 main > section:nth-of-type(7) {
     padding-top: 20px;
@@ -444,11 +507,6 @@ main > section:nth-of-type(7) p {
     line-height: 1.75em;
 }
 
-main > section:nth-of-type(7) h1 {
-    color: #FFFFFF;
-    font-size: 1.25em;
-}
-
 main > section:nth-of-type(7) > ul {
     display: flex;
     flex-wrap: wrap;
@@ -462,12 +520,12 @@ main > section:nth-of-type(7) > ul > li {
     margin-left: .5em;
 }
 
-main > section:nth-of-type(7) > ul > li > .link > img {
+main > section:nth-of-type(7) > ul > li > a > img {
     width: 10em;
     height: 6em;
 }
 
-main > section:nth-of-type(7) > ul > li > .link {
+main > section:nth-of-type(7) > ul > li > a {
     display: flex;
     justify-content: center;
     margin-left: .4em;
@@ -488,6 +546,7 @@ main > section:nth-of-type(7) > ul > li > span {
 
 main > section:nth-of-type(7) .balk {
     display: flex;
+    justify-content: center;
     font-family: "helvetica", sans-serif;
     text-align: center;
     padding: 9px 10px;
@@ -501,12 +560,20 @@ main > section:nth-of-type(7) .balk {
 
 
 /* hier begint de CSS van de footer */
+footer > h6 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-family: 'Zilla Slab', sans-serif;
+    font-size: 1.5em;
+}
+
 
 footer {
     background: #dde9e8;
     padding-top: 1.25em;
     margin-top: 1.25em;
-    margin-bottom: 15vh;
+    margin-bottom: 10vh;
 }
 
 footer > p {
@@ -570,18 +637,29 @@ a:nth-of-type(5) {
     margin: .5em 2em .5em 2em;
 }
 
-/* dit is een code van https://css-tricks.com/quick-reminder-that-details-summary-is-the-easiest-way-ever-to-make-an-accordion/ om de pijltjes te veranderen van de summary. Het werkt alleen niet
-summary {
-    font-weight: bold;
-    list-style-image: url(../images/dropdown.png);
+footer > .big {
+    display: flex;
+    flex-direction: row;
+    margin-left: 4em;
+
 }
 
-summary::-webkit-details-marker {
-    background: url(../images/dropdown.png);
+footer > .big > section {
+    width: 49vw;
+}
+
+footer > .big > section > a {
+    text-decoration: none;
+    font-family: "helvetica", sans-serif;
+    font-size: .8em;
     color: black;
 }
 
-*/
+footer > .big > section > ul > li {
+    list-style: none;
+    font-size: .7em;
+    margin-top: 1em;
+}
 
 /* hier begint de CSS van de tabbar */
 
@@ -635,48 +713,80 @@ summary::-webkit-details-marker {
 
 /* hier begint de CSS van de introductie section */
 
-.detail > section:nth-of-type(1) > h1 {
+.detail > h1 {
+    display: flex;
+    justify-content: center;
     font-family: 'Zilla Slab', sans-serif;
-    margin-top: 10px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    text-align: center;
 }
 
-.detail > section:nth-of-type(2) > h2,
-.detail > section:nth-of-type(5) > h2 {
+.detail > articel {
+    display: flex;
+    justify-content: center;
+}
+
+.detail > articel > p {
+    font-family: "OpenSans-Light", sans-serif;
+    font-size: 1.1em;
+    text-align: center;
+    width: 18em;
+    height: 6.25em;
+}
+
+.detail > section:first-of-type {
+    display: flex;
+    flex-direction: row;
+    margin-left: 2.5em;
+    margin-top: 2em;
+}
+
+.detail > section:first-of-type > a  {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: black;
     font-family: 'Zilla Slab', sans-serif;
-    font-size: 15px;
-    ;
+    font-size: 0.9em;
+    text-decoration: none;
     color: white;
-    width: 15em;
-    height: 40px;
-    margin: 20px 20px 20px 40px;
+    width: 10em;
+    height: 2.5em;
+    margin-left: 1em;
+
 }
 
 /* hier begint de CSS van populair van de detailpagina */
 
-.detail > section:nth-of-type(3) > ul {
+.detail > h2 {
+    display: flex;
+    justify-content: center;
+    font-family: 'Zilla Slab', sans-serif;
+    font-size: 1.75em;
+}
+
+.detail > section:nth-of-type(2) > ul {
     display: flex;
     flex-wrap: wrap;
     list-style: none;
     justify-content: center;
+    margin-top: 2em;
 }
 
-.detail > section:nth-of-type(3) > ul > li {
+.detail > section:nth-of-type(2) > ul > li {
     flex-basis: 30%;
-    margin-left: 10px;
-    margin-right: 20px;
-    margin-bottom: 20px;
+    margin-left: 0.6em;;
+    margin-right: 1.25em;
+    margin-bottom: 1.25em;
 }
 
-.detail > section:nth-of-type(3) > ul > li > img {
-    width: 150px;
-    height: 110px;
+.detail > section:nth-of-type(2) > ul > li > img {
+    width: 9.3em;
+    height: 6.8em;
 }
 
-.detail > section:nth-of-type(3) > ul > li > span {
+.detail > section:nth-of-type(2) > ul > li > span {
     display: flex;
     font-family: 'OpenSans-Light', sans-serif;
     font-size: 15px;
@@ -685,7 +795,7 @@ summary::-webkit-details-marker {
 
 /* hier begint de CSS van het weekmenu Sandra&Eric */
 
-.detail > section:nth-of-type(4) > details > summary {
+.detail > section:nth-of-type(3) > details > summary {
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
@@ -696,18 +806,29 @@ summary::-webkit-details-marker {
 
 /* hier begint de CSS van de herfstrecepten van de detailpagina */
 
-.detail > section:nth-of-type(5) > p {
+.detail > section:nth-of-type(4) {
+    background-color: rgba(101, 143, 137, 0.75);
+}
+
+.detail > section:nth-of-type(4) > h3 {
+    display: flex;
+    justify-content: center;
+    font-size: 1.5em;
+    font-family: 'Zilla Slab', sans-serif;
+    color: white;
+}
+
+.detail > section:nth-of-type(4) > p {
     color: #ffffff;
     text-align: center;
     margin-top: 24px;
     font-size: 10px;
-    ;
     line-height: 1.75;
 }
 
 .detail > section:nth-of-type(5) > ul {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     list-style: none;
     justify-content: center;
 }
@@ -733,7 +854,7 @@ summary::-webkit-details-marker {
     color: #ffffff;
 }
 
-.detail > section:nth-of-type(2) a {
+.detail >  a {
     display: flex;
     justify-content: center;
     font-family: "helvetica", sans-serif;
@@ -744,11 +865,19 @@ summary::-webkit-details-marker {
     color: #FFFFFF;
 }
 
-/* hier begint de CSS van de media quary's */
+/* hier begint de CSS van de media query's */
 
 /* dit is de CSS voor als het scherm groter dan 1040px wordt */
 
+
+
 @media (min-width:1040px) {
+
+    .streep::before,
+    .streep::after {
+        width: 15em;
+    }
+
     .tab {
         visibility: hidden;
     }
@@ -763,18 +892,18 @@ summary::-webkit-details-marker {
         background-color: transparent;
     }
 
-    main > section:first-of-type > section  {
+    main > section:first-of-type > .inspo {
         display: flex;
         flex-direction: row;
         width: 60vw;
     }
 
-    main > section:first-of-type > section > div > p {
+    main > section:first-of-type > .inspo > section > p {
         width: 35vw;
         margin-top: 2em;
     }
 
-    main > section:nth-of-type(3) > div {
+    main > section:nth-of-type(3) > .inspo {
         width: 49vw;
     }
 
@@ -784,14 +913,112 @@ summary::-webkit-details-marker {
         flex-wrap: wrap;
     }
 
+    main > .recepten > div {
+        width: 49vw;
+        margin-left: .5em;
+        margin-bottom: 1em;
+    }
+
     main > .populair {
-        width: 80vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 90vw;
         font-size: 1.5em;
     }
 
-    main > a {
+    main > .populair > a {
+        width: 30vw;
+        font-size: .7em;
+        left: 30%;
+    }
+
+    main > article {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main > article > p {
+        width: 60vw;
+    }
+
+    main > .sint {
+        display: flex;
+        flex-direction: row;
+    }
+
+    main > .sint > h5 {
+        position: absolute;
+        left: 40%;
+
+    }
+
+    main > .sint > articel > img {
+        width: 30vw;
+        margin-left: 1.8em;
+        margin-top: 3em;
+    }
+
+    main > .sint > articel > p {
+        margin-left: 2em;
+    }
+
+    main > section:nth-of-type(6) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main > section:nth-of-type(6) > articel > p {
         width: 49vw;
     }
+
+    main > section:nth-of-type(6) > a {
+        width: 30vw;
+    }
+
+    main > section:nth-of-type(7) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main > section:nth-of-type(7) > ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        margin-top: 1em;
+
+    }
+
+    main > section:nth-of-type(7) > ul > li {
+        margin-left: 2em;
+    }
+
+    main > section:nth-of-type(7) > ul > li > a > img {
+        width: 20vw;
+        height: 15vh;
+        margin-left: 2.5em;
+    }
+
+    main > section:nth-of-type(7) > ul > li > span {
+        font-size: 1em;
+        margin-top: 2em;
+        margin-right: 2em;
+    }
+
+    main > section:nth-of-type(7) > .balk {
+        width: 30vw;
+        right: 30%;
+    }
+
+    footer > details {
+        visibility: hidden;
+        position: absolute;
+    }
+
+
 
 }
 
@@ -799,13 +1026,13 @@ summary::-webkit-details-marker {
 
 @media (max-width:1040px) {
     .headertab {
-        position: absolute;
-        visibility: hidden;
+        display: none !important;
+        width: 0 !important;
     }
 
     .filter > div > div:first-of-type > div {
-        position: absolute;
-        visibility: hidden;
+        display: none !important;
+        width: 0 !important;
     }
 
     .filter > div > div:last-of-type > a > span {
@@ -813,30 +1040,39 @@ summary::-webkit-details-marker {
         visibility: hidden;
     }
 
+
     .filter > div > div:last-of-type > a:nth-of-type(2) {
         position: absolute;
         visibility: hidden;
     }
 
     .start > section:first-of-type > div {
-        visibility: hidden;
+        display: none !important;
+        width: 0 !important;
     }
+
+
 
     .start section:first-of-type {
         width: 100vw;
         height: 7em;
-        margin-left: 3em;
 
     }
 
-      .start section:first-of-type > img {
+    .start section:first-of-type > img {
         justify-content: center;
         width: 20em;
         height: 7em;
 
     }
 
-    hr:first-of-type {
+    .start > .eerste {
         visibility: hidden;
     }
+
+    footer > .big {
+        display: none;
+        width: 0 !important;
+    }
 }
+
