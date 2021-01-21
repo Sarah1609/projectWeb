@@ -13,8 +13,8 @@ html {
 }
 
 body {
-width: 100vw;
-overflow-x: hidden;
+    width: 100vw;
+    overflow-x: hidden;
 }
 
 /* hier begint de CSS van de eerste homepagina*/
@@ -29,6 +29,8 @@ hr {
 
 
 /* hier begint de CSS van de header */
+
+/* dit is de CSS van alles wat binnen de class .start valt in de header */
 
 .start section:first-of-type {
     display: flex;
@@ -73,15 +75,13 @@ hr {
     border: solid 2px white;
 }
 
-
 .start > section > div:first-of-type > img {
     width: 1em;
     margin: .6em;
     margin-top: 2em;
 }
 
-
-/* dit is CSS voor de verborgen tabbar wat uitschuift na 1040px */
+/* dit is CSS voor de verborgen tabbar wat uitschuift na 1040px. Dit valt in de HTML onder de class .headertab */
 
 .start > .headertab > nav > ul {
     display: flex;
@@ -104,7 +104,9 @@ hr {
     font-weight: normal;
 }
 
-/* hier begint de CSS van de search balk voor zowel 1040 px als klein */
+/* hier begint de CSS van de search balk voor zowel 1040 px als klein. De balk valt onder de class .filter in de HTML */
+
+/* dit is voor zowel 1040 px als kleiner */
 
 .filter {
     flex-direction: column;
@@ -116,6 +118,8 @@ hr {
     height: 15em;
     width: 100vw;
 }
+
+/* dit is voor groter dan 1040px */
 
 .filter > div {
     display: flex;
@@ -134,6 +138,8 @@ hr {
     height: 3em;
 
 }
+
+/* dit is voor zowel 1040 px als kleiner */
 
 .filter > div > div:first-of-type {
     display: flex;
@@ -194,6 +200,8 @@ hr {
     width: 100%;
 }
 
+/* dit is voor groter dan 1040px */
+
 .filter details {
     width: 30%;
     max-width: 100vw;
@@ -210,7 +218,9 @@ hr {
     padding: .6em;
 }
 
-/* hier begint de CSS van de eerste section 'nieuw' */
+/* hier start de CSS van de main */
+
+/* hier start de CSS van de eerste section "nieuw". Dit bevat sections, artikelen en images */
 
 
 main > section > section > img {
@@ -245,6 +255,8 @@ main > section > .inspo > section > p:nth-of-type(2) {
     margin-left: 0.6em;
 }
 
+/* dit is CSS voor alle strepen die gebruikt worden bij de hoofdtitels in de website. Dit valt onder de class .streep */
+
 .streep {
     margin-top: 30px;
 }
@@ -259,7 +271,7 @@ main > section > .inspo > section > p:nth-of-type(2) {
     margin-right: 1em;
 }
 
-/* hier begint de CSS van de section 'introductie' */
+/* hier start de CSS van de tweede section "introductie". Dit bevat sections en images */
 
 .intro {
     display: flex;
@@ -291,7 +303,7 @@ main > article > p {
 }
 
 
-/* hier begint de CSS van de section 'recepten' */
+/* hier start de CSS van de derde section "recepten". Dit bevat div, javascript en images */
 
 main > h3 {
     display: flex;
@@ -318,6 +330,8 @@ main > section:nth-of-type(3) > div > p {
     font-size: 1em;
     font-family: 'OpenSans-Light', sans-serif;
 }
+
+/* hier begint de CSS voor de hartjes in de derde section "recepten" dit is gekoppeld aan javascript */
 
 path {
     fill: white;
@@ -369,7 +383,9 @@ svg {
     }
 }
 
-/* hier begint de CSS van de section 'populair' */
+/* dit is het einde van javascript */
+
+/* hier start de CSS van de vierde section "populair". Dit bevat sections en navigatie */
 
 
 main > h4 {
@@ -387,7 +403,6 @@ main > section:nth-of-type(4) ul {
     align-content: center;
     width: 80%;
     margin-left: 10%;
-
 }
 
 main > section:nth-of-type(4) li {
@@ -399,7 +414,6 @@ main > section:nth-of-type(4) li {
     border: solid #000000 .1em;
     margin: .5em;
     font-size: .8em;
-
 }
 
 main > section:nth-of-type(4) li:hover {
@@ -419,7 +433,7 @@ main > section:nth-of-type(4) > a {
 }
 
 
-/* hier begint de CSS van de section 'Sinterklaas' */
+/* hier start de CSS van de vijfde section "Sinterklaas". Dit bevat sections, artikelen en images */
 
 main > .sint > h5 {
     display: flex;
@@ -445,7 +459,7 @@ main > .sint > articel > p {
     margin-left: 0.6em;
 }
 
-/* hier begint de CSS van de section 'inloggen' */
+/* hier start de CSS van de zesde section "inloggen". Dit bevat input en navigatie (button) */
 
 main > section:nth-of-type(6) > h6 {
     display: flex;
@@ -480,8 +494,7 @@ main > section:nth-of-type(6) a {
     color: #FFFFFF;
 }
 
-
-/* hier begint de CSS van de section 'herstrecepten' */
+/* hier start de CSS van de zevende section "Herfstrecepten". Dit bevat tekst, navigatie (button) en images */
 
 main > section:nth-of-type(7) > h6 {
     display: flex;
@@ -558,16 +571,9 @@ main > section:nth-of-type(7) .balk {
     color: #000000;
 }
 
-
 /* hier begint de CSS van de footer */
-footer > h6 {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
-    font-family: 'Zilla Slab', sans-serif;
-    font-size: 1.5em;
-}
 
+/* dit is de CSS van het eerste blokje met input voor het opvragen van mails */
 
 footer {
     background: #dde9e8;
@@ -576,47 +582,39 @@ footer {
     margin-bottom: 10vh;
 }
 
-footer > p {
+footer > section > h6 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-family: 'Zilla Slab', sans-serif;
+    font-size: 1.3em;
+}
+
+footer > section > p {
+    font-family: "OpenSans-Light", sans-serif;
     font-size: 1em;
     text-align: center;
-    width: 90%;
 }
 
-footer > h1 {
-    font-size: 1.40em;
-    text-align: center;
+/* hier start de CSS van de input */
+
+footer > section > label {
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
 }
 
-footer > label > input {
+footer > section > label > input {
     display: flex;
     align-items: center;
     height: 1.9em;
-    width: 90%;
+    width: 60vw;
     font-size: 1em;
-    margin-left: 5%;
     border-radius: .5em .5em .5em .5em;
     border-style: none;
 }
 
-footer > details {
-    line-height: 3em;
-
-}
-
-footer > details > summary {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: .8em;
-
-}
-
-footer > details > summary > span {
-    width: 100px;
-}
-
-
-footer > a {
+footer > section > a {
     display: flex;
     justify-content: center;
     font-family: "helvetica", sans-serif;
@@ -627,15 +625,29 @@ footer > a {
     color: #FFFFFF;
 }
 
-footer > a:nth-of-type(2),
-a:nth-of-type(3),
-a:nth-of-type(4),
-a:nth-of-type(5) {
-    font-size: .75em;
-    background: none;
-    color: black;
-    margin: .5em 2em .5em 2em;
+/* hier start de CSS van de dropdown door middel van details en summary. Dit is voor als het beeld kleiner is dan 1040px */
+
+footer > details {
+    display: flex;
+    justify-content: center;
+    line-height: 3em;
 }
+
+footer > details > summary {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "OpenSans-Light", sans-serif;
+    font-size: .8em;
+}
+
+footer > details > p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* dit is CSS voor als de footer groter wordt dan 1040px */
 
 footer > .big {
     display: flex;
@@ -661,7 +673,18 @@ footer > .big > section > ul > li {
     margin-top: 1em;
 }
 
-/* hier begint de CSS van de tabbar */
+footer > a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    font-size: .75em;
+    background: none;
+    color: black;
+    padding: 1em 1em 1em 1em;
+}
+
+/* hier begint de CSS van de tabbar. De tabbar is alleen zichtbaar als het scherm kleiner is dan 1040px */
 
 .tab {
     position: fixed;
@@ -708,10 +731,11 @@ footer > .big > section > ul > li {
     margin-top: 10px;
 }
 
+/* hier stopt de CSS van de eerste homepagina */
 
-/* hier begint de CSS van de detailpagina */
+/* hier begint de CSS van de detailpagina. Op de detailpagina zijn de header en de footer overgenomen van de homepagina met dezelfde classes. Hierdoor is er geen CSS terug te vinden van de header en de footer bij de detailpagina (je moet hiervoor terug naar de homepagina CSS) */
 
-/* hier begint de CSS van de introductie section */
+/* hier start de CSS van de eerste section "Introductie". Dit bevat artikelen en navigatie (button) */
 
 .detail > h1 {
     display: flex;
@@ -737,12 +761,12 @@ footer > .big > section > ul > li {
 
 .detail > section:first-of-type {
     display: flex;
+    justify-content: center;
     flex-direction: row;
-    margin-left: 2.5em;
     margin-top: 2em;
 }
 
-.detail > section:first-of-type > a  {
+.detail > section:first-of-type > a {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -757,7 +781,7 @@ footer > .big > section > ul > li {
 
 }
 
-/* hier begint de CSS van populair van de detailpagina */
+/* hier start de CSS van de tweede section "populair". Dit bevat images en navigatie (button) */
 
 .detail > h2 {
     display: flex;
@@ -766,7 +790,7 @@ footer > .big > section > ul > li {
     font-size: 1.75em;
 }
 
-.detail > section:nth-of-type(2) > ul {
+.detail > section:nth-of-type(2) > nav > ul {
     display: flex;
     flex-wrap: wrap;
     list-style: none;
@@ -774,26 +798,26 @@ footer > .big > section > ul > li {
     margin-top: 2em;
 }
 
-.detail > section:nth-of-type(2) > ul > li {
+.detail > section:nth-of-type(2) > nav > ul > li {
     flex-basis: 30%;
-    margin-left: 0.6em;;
+    margin-left: 0.6em;
     margin-right: 1.25em;
     margin-bottom: 1.25em;
 }
 
-.detail > section:nth-of-type(2) > ul > li > img {
+.detail > section:nth-of-type(2) > nav > ul > li > img {
     width: 9.3em;
     height: 6.8em;
 }
 
-.detail > section:nth-of-type(2) > ul > li > span {
+.detail > section:nth-of-type(2) > nav > ul > li > span {
     display: flex;
     font-family: 'OpenSans-Light', sans-serif;
     font-size: 15px;
     text-align: center;
 }
 
-/* hier begint de CSS van het weekmenu Sandra&Eric */
+/* hier begint de CSS van de derde section van het weekmenu Sandra&Eric. Dit onderdeel is niet verder uitgewerkt waardoor de dropdown leeg is. */
 
 .detail > section:nth-of-type(3) > details > summary {
     display: flex;
@@ -803,84 +827,65 @@ footer > .big > section > ul > li {
     font-size: 1.5em;
 }
 
-
-/* hier begint de CSS van de herfstrecepten van de detailpagina */
+/* hier start de CSS van de vierde section "Herfstrecepten". Dit bevat artikelen en images. */
 
 .detail > section:nth-of-type(4) {
+    padding-top: 2em;
+    padding-bottom: .5em;
     background-color: rgba(101, 143, 137, 0.75);
 }
 
 .detail > section:nth-of-type(4) > h3 {
     display: flex;
     justify-content: center;
-    font-size: 1.5em;
     font-family: 'Zilla Slab', sans-serif;
+    font-size: 1.75em;
     color: white;
+    margin-bottom: 1em;
 }
 
-.detail > section:nth-of-type(4) > p {
-    color: #ffffff;
-    text-align: center;
-    margin-top: 24px;
-    font-size: 10px;
-    line-height: 1.75;
-}
-
-.detail > section:nth-of-type(5) > ul {
+.detail > section:nth-of-type(4) > articel > p {
     display: flex;
-    flex-wrap: nowrap;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.detail > section:nth-of-type(4) > articel > section {
+    display: flex;
+    flex-wrap: wrap;
     list-style: none;
     justify-content: center;
+    margin-top: 2em;
+
 }
 
-.detail > section:nth-of-type(5) > ul > li {
-    flex-basis: 30%;
-    margin-left: 10px;
-    margin-right: 20px;
-    margin-bottom: 20px;
-}
+.detail > section:nth-of-type(4) > articel > section > img {
+    width: 40vw;
+    margin: 1em 1em 1em 1em;
 
-.detail > section:nth-of-type(5) > ul > li > img {
-    margin-left: 10px;
-    width: 150px;
-    height: 90px;
-}
-
-.detail > section:nth-of-type(5) > ul > li > span {
-    display: flex;
-    font-family: 'OpenSans-Light', sans-serif;
-    font-size: 15px;
-    text-align: center;
-    color: #ffffff;
-}
-
-.detail >  a {
-    display: flex;
-    justify-content: center;
-    font-family: "helvetica", sans-serif;
-    margin: 2em 5em 2em 5em;
-    background: black;
-    padding: 9px 16px;
-    text-decoration: none;
-    color: #FFFFFF;
 }
 
 /* hier begint de CSS van de media query's */
 
 /* dit is de CSS voor als het scherm groter dan 1040px wordt */
 
-
-
 @media (min-width:1040px) {
+
+    /* dit is de CSS van de streep die terug te vinden is bij alle hoofdtitels in de website */
 
     .streep::before,
     .streep::after {
         width: 15em;
     }
 
+    /* dit is CSS voor de tabbar die aan de onderkant te vinden is als het scherm kleiner is dan 1040px */
+
     .tab {
         visibility: hidden;
     }
+
+    /* dit is CSS voor de navigatiebalk die aan de bovenkant te vinden is als het scherm kleiner is dan 1040px */
 
     .filter > div > div:first-of-type > span {
         position: absolute;
@@ -891,6 +896,10 @@ footer > .big > section > ul > li {
         color: black;
         background-color: transparent;
     }
+
+    /* dit is CSS voor de main van de homepagina als het scherm groter wordt dan 1040px */
+
+    /* dit is main -> eerste section */
 
     main > section:first-of-type > .inspo {
         display: flex;
@@ -907,6 +916,8 @@ footer > .big > section > ul > li {
         width: 49vw;
     }
 
+    /* dit is main -> recepten */
+
     main > .recepten {
         display: flex;
         flex-direction: row;
@@ -918,6 +929,8 @@ footer > .big > section > ul > li {
         margin-left: .5em;
         margin-bottom: 1em;
     }
+
+    /* dit is main -> populair */
 
     main > .populair {
         display: flex;
@@ -943,6 +956,8 @@ footer > .big > section > ul > li {
         width: 60vw;
     }
 
+    /* dit is main -> sinterklaas */
+
     main > .sint {
         display: flex;
         flex-direction: row;
@@ -951,7 +966,6 @@ footer > .big > section > ul > li {
     main > .sint > h5 {
         position: absolute;
         left: 40%;
-
     }
 
     main > .sint > articel > img {
@@ -963,6 +977,8 @@ footer > .big > section > ul > li {
     main > .sint > articel > p {
         margin-left: 2em;
     }
+
+    /* dit is main -> inloggen */
 
     main > section:nth-of-type(6) {
         display: flex;
@@ -978,6 +994,8 @@ footer > .big > section > ul > li {
         width: 30vw;
     }
 
+    /* dit is main -> herfstrecepten */
+
     main > section:nth-of-type(7) {
         display: flex;
         flex-direction: column;
@@ -989,7 +1007,6 @@ footer > .big > section > ul > li {
         flex-direction: row;
         flex-wrap: nowrap;
         margin-top: 1em;
-
     }
 
     main > section:nth-of-type(7) > ul > li {
@@ -1013,22 +1030,83 @@ footer > .big > section > ul > li {
         right: 30%;
     }
 
+    /* dit is het einde van de media query's van de main */
+
+    /* hier start de media query's van de footer als het scherm groter wordt dan 1040px */
+
+    footer {
+        margin-bottom: 0;
+    }
+
+    footer > section:first-of-type {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 3em;
+        border-bottom: solid 2px grey;
+    }
+
+    footer > section > a {
+        width: 30vw;
+    }
+
     footer > details {
         visibility: hidden;
         position: absolute;
     }
 
+    /* dit is het einde van de CSS van de media query's voor de homepagina */
 
+    /* hier start de CSS van de media query's voor de detail pagina als het scherm groter wordt dan 1040px */
 
+    /* dit is detail > intro */
+
+    .detail > articel > p {
+        width: 90vw;
+        height: 4em;
+        padding-top: 1em;
+    }
+
+    .detail > section:first-of-type {
+        display: flex;
+        justify-content: center;
+    }
+
+    .detail > section:first-of-type > a {
+        width: 20vw;
+    }
+
+    /* dit is detail > populair */
+
+    .detail > section:nth-of-type(2) {
+        display: flex;
+        justify-content: center;
+    }
+
+    .detail > section:nth-of-type(2) > nav > ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        width: 49vw;
+    }
+
+    .detail > section:nth-of-type(2) > nav > ul > li > img {
+        width: 20vw;
+        height: 25vh;
+    }
 }
 
 /* dit is de CSS voor als het scherm kleiner wordt dan 1040px */
 
 @media (max-width:1040px) {
+    /* dit is CSS voor de navigatie die uitschuift als het scherm groter is dan 1040px */
+
     .headertab {
         display: none !important;
         width: 0 !important;
     }
+
+    /* dit is de CSS voor de navigatie en filter optie als het scherm groter is dan 1040 px */
 
     .filter > div > div:first-of-type > div {
         display: none !important;
@@ -1040,39 +1118,37 @@ footer > .big > section > ul > li {
         visibility: hidden;
     }
 
-
     .filter > div > div:last-of-type > a:nth-of-type(2) {
         position: absolute;
         visibility: hidden;
     }
+
+    /* hier start de CSS van de header van de homepagina. Dit zijn alle iconen en buttons die moeten verdwijnen als het scherm kleiner wordt dan 1040px in de header */
 
     .start > section:first-of-type > div {
         display: none !important;
         width: 0 !important;
     }
 
-
-
     .start section:first-of-type {
+        display: flex;
+        justify-content: center;
         width: 100vw;
-        height: 7em;
-
     }
 
     .start section:first-of-type > img {
-        justify-content: center;
-        width: 20em;
-        height: 7em;
-
+        width: 40vw;
+        height: 5vh;
     }
 
     .start > .eerste {
         visibility: hidden;
     }
 
+    /* dit is de CSS van de section "big" in de footer die moet verdwijnen als het scherm kleiner wordt dan 1040px */
+
     footer > .big {
         display: none;
         width: 0 !important;
     }
 }
-

@@ -10,13 +10,14 @@
 
     <link href="styles/style.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <script src="scripts/script.js"></script>
 
-    <!------ start van de header ---->
+    <!--- hier start de header --->
+
+    <!--- hier start de HTML van de iconen als het scherm groter is dan 1040px --->
 
     <header class="start">
 
@@ -29,16 +30,20 @@
                 <img src="images/insta.png" alt="instagram">
                 <img src="images/youtube.png" alt="youtube">
 
+                <!--- hier start de HTML van de het logo en twee buttons als het scherm groter is dan 1040px --->
+
             </div>
             <img src="images/logo.png" alt="logo">
             <div>
-                <a href="inspiratie.html">INLOGGEN</a>
-                <a href="inspiratie.html">MAAK ACCOUNT</a>
+                <a href="index.html">INLOGGEN</a>
+                <a href="index">MAAK ACCOUNT</a>
             </div>
 
         </section>
 
         <hr class="eerste">
+
+        <!--- hier start de HTML van de uitgeklapte navigatie als het scherm groter is dan 1040px --->
 
         <div class="headertab">
             <nav>
@@ -55,7 +60,7 @@
             </nav>
         </div>
 
-
+        <!--- hier start de HTML van de navigatie als het scherm groter is dan 1040px en de HTML van als het scherm kleiner is dan 1040px (filter)--->
 
         <div class="filter">
             <div>
@@ -63,6 +68,8 @@
                     <span>filters</span>
 
                     <div>
+
+                        <!--- details is actief als het scherm groter is dan 1040 px --->
 
                         <details>
                             <summary>GERECHTEN</summary>
@@ -91,15 +98,18 @@
                     <form>
                         <input type="text" placeholder="Naam gerecht of ingredient">
                     </form>
-                    <a href="inspiratie.html"><span>ZOEK</span><img src="images/zoek.png"></a>
+                    <a href="index.html"><span>ZOEK</span><img src="images/zoek.png" alt="zoek"></a>
                 </div>
             </div>
         </div>
 
     </header>
 
+    <!--- dit is het einde van de header --->
 
-    <!------ start van de eerste introductie section ---->
+    <!--- dit is het begin van de main --->
+
+    <!--- hier start de HTML van het eerste blok met een H1, een artikel en buttons --->
 
     <main class="detail">
 
@@ -108,110 +118,135 @@
 
         <hr>
 
-    <articel>
+        <!--- hier begint het artikel --->
 
-        <p><i>Klik op de 'Verras me' knop en laat je verrassen met een recept. Bekijk alle recepten verdeeld in categorieën in de 'Recepten index' en bekijk onderaan mijn nieuwe weekmenu.</i></p>
+        <articel>
+
+            <p><i>Klik op de 'Verras me' knop en laat je verrassen met een recept. Bekijk alle recepten verdeeld in categorieën in de 'Recepten index' en bekijk onderaan mijn nieuwe weekmenu.</i></p>
 
         </articel>
 
+        <!--- hier beginnen de buttons --->
 
-       <section>
-        <a href="index.html">VERRAS ME</a>
-        <a href="index.html">RECEPTEN INDEX</a>
+        <section>
+            <a href="index.html">VERRAS ME</a>
+            <a href="index.html">RECEPTEN INDEX</a>
         </section>
 
 
         <hr>
 
-    <!------ start van de section 'populair ---->
+        <!--- hier begint de HTML van de tweede section "populair". Hier is navigatie te vinden met images --->
 
         <h2>Populair</h2>
 
         <section>
 
-        <ul>
+            <nav>
 
-            <li><img src="images/ovenschotel.jpg" alt="ovenschotels">
-                <span>Ovenschotels</span></li>
+                <ul>
 
-            <li><img src="images/pepernotentaart.jpg" alt="sinterklaas gerechten">
-                <span>Sinterklaas gerechten</span></li>
+                    <li><img src="images/ovenschotel.jpg" alt="ovenschotels">
+                        <span>Ovenschotels</span></li>
 
-            <li><img src="images/stampot.jpg" alt="stamppot recepten">
-                <span>Stamppot recepten</span></li>
+                    <li><img src="images/pepernotentaart.jpg" alt="sinterklaas gerechten">
+                        <span>Sinterklaas gerechten</span></li>
 
-            <li><img src="images/kerstrecepten.jpg" alt="kerstrecepten">
-                <span>Kerstrecepten</span></li>
-        </ul>
+                    <li><img src="images/stampot.jpg" alt="stamppot recepten">
+                        <span>Stamppot recepten</span></li>
+
+                    <li><img src="images/kerstrecepten.jpg" alt="kerstrecepten">
+                        <span>Kerstrecepten</span></li>
+                </ul>
+
+            </nav>
 
         </section>
 
         <hr>
-    <!------ start van de dropdownbox 'weekmenu' ---->
 
-    <section>
-
-       <details>
-        <summary>Sandra's en Eric's weekmenu</summary>
-
-        </details>
-
-        </section>
-
-<hr>
-
-    <!------ start van de section 'herfstrecepten' ---->
-
-    <section>
-
-        <h3>HERFST RECEPTEN</h3>
-
-        <p>Proef nu de herst met deze heerlijke herfstrecepten. Maak de recepten nu makkelijk en snel zelf en geniet van een heerlijke kom paddenstoelensoep, jachtschotel, of een quiche met pompoen bijvoorbeeld. Varieer dit seizoen met echte herfst groente en fruit zoals bramen, peer, paddensteoelen, kastanjes, pompoen en rode kool. Bekijk hier alle herfst recepten.</p>
-
-        </section>
+        <!--- hier start de HTML van de derde section "Sandra's en Eric's weekmenu". Dit is een dropdown door middel van detail en summary. Dit onderdeel is niet verder ingevuld (het staat dus leeg) --->
 
         <section>
 
-        <ul>
+            <details>
+                <summary>Sandra's en Eric's weekmenu</summary>
 
-            <li><img src="images/vegastoofschoteljpg.jpg" alt="vegetarische stoofschotel">
-                <span>Vegetarische stoofschotel</span></li>
-
-            <li><img src="images/pompoen.jpg" alt="pompoen crumble">
-                <span>Pompen crumble</span></li>
-
-            <li><img src="images/spicerolls.jpg" alt="Pompoen kaneelbroodjes">
-                <span>Pompoen kaneelbroodjes</span></li>
-
-            <li><img src="images/halloweencakje.jpg" alt="Pompoencakejes voor Halloween">
-                <span>Pompoencakejes voor Halloween</span></li>
-
-        </ul>
+            </details>
 
         </section>
 
-        <a href="index.html">MEER HERFST RECEPTEN</a>
+        <hr>
 
+        <!--- hier start de HTML van de vierde section "Herfstrecepten". Hier zijn artikelen te vinden met images en een button --->
+
+        <section>
+
+            <h3>HERFST RECEPTEN</h3>
+
+            <!--- start van het artikel --->
+
+            <articel>
+
+                <p>Proef nu de herst met deze heerlijke herfstrecepten. Maak de recepten nu makkelijk en snel zelf en geniet van een heerlijke kom paddenstoelensoep, jachtschotel, of een quiche met pompoen bijvoorbeeld. Varieer dit seizoen met echte herfst groente en fruit zoals bramen, peer, paddensteoelen, kastanjes, pompoen en rode kool. Bekijk hier alle herfst recepten.</p>
+
+                <section>
+
+                    <!--- start van de images --->
+
+                    <img src="images/vegastoofschoteljpg.jpg" alt="vegetarische stoofschotel">
+
+
+                    <img src="images/pompoen.jpg" alt="pompoen crumble">
+
+
+                    <img src="images/spicerolls.jpg" alt="Pompoen kaneelbroodjes">
+
+
+                    <img src="images/halloweencakje.jpg" alt="Pompoencakejes voor Halloween">
+
+
+                </section>
+
+            </articel>
+
+            <!--- start van de button --->
+
+            <a href="index.html">MEER HERFST RECEPTEN</a>
+
+        </section>
 
     </main>
 
-    <!------ start van de footer ---->
+    <!--- dit is het einde van de main --->
+
+    <!--- start van de footer --->
 
     <footer>
 
-         <h6>DE NIEUWSTE RECEPTEN IN JE MAIL?</h6>
-        <p>Ontvang elke twee weken de gratis nieuwsbrief met de nieuwste recepten en tips!</p>
+        <!--- hier start een section met een input voor nieuwsberichten --->
 
-        <label>
-            <input type=email placeholder="E-mailadres">
-        </label>
+        <section>
 
-        <a href="inspiratie.html">AANMELDEN</a>
-        <hr>
+            <h6>DE NIEUWSTE RECEPTEN IN JE MAIL?</h6>
+            <p>Ontvang elke twee weken de gratis nieuwsbrief met de nieuwste recepten en tips!</p>
+
+            <!--- start van de input --->
+
+            <label>
+                <input type=email placeholder="E-mailadres">
+            </label>
+
+            <a href="index.html">AANMELDEN</a>
+            <hr>
+
+        </section>
+
+        <!--- hier start de detail + summary wat weergegven wordt als het scherm kleiner is dan 1040px --->
 
         <details>
             <summary>GERECHTEN</summary>
-            <span>Ontbijt</span>
+            <p>Ontbijt</p>
             <p>Lunch</p>
             <p>Voorgerechten</p>
             <p>Bijgerechten</p>
@@ -282,8 +317,10 @@
 
         <section class="big">
 
+            <!--- hier start de navigatie wat weergegven wordt als het scherm groter is dan 1040px --->
+
             <section>
-                <a href="inspiratie.html"> GERECHTEN</a>
+                <a href="index.html"> GERECHTEN</a>
                 <ul>
                     <li>Ontbijt</li>
                     <li>Lunch</li>
@@ -298,7 +335,7 @@
             </section>
 
             <section>
-                <a href="inspiratie.html"> TIJD </a>
+                <a href="index.html"> TIJD </a>
                 <ul>
                     <li>0 tot 20 minuten</li>
                     <li>20 tot 40 minuten</li>
@@ -308,7 +345,7 @@
             </section>
 
             <section>
-                <a href="inspiratie.html"> GEMAK </a>
+                <a href="index.html"> GEMAK </a>
                 <ul>
                     <li>Gemakkelijk</li>
                     <li>Gemiddeld</li>
@@ -317,7 +354,7 @@
             </section>
 
             <section>
-                <a href="inspiratie.html"> SOORT </a>
+                <a href="index.html"> SOORT </a>
                 <ul>
                     <li>Kip</li>
                     <li>Vis</li>
@@ -328,7 +365,7 @@
             </section>
 
             <section>
-                <a href="inspiratie.html"> DIEET </a>
+                <a href="index.html"> DIEET </a>
                 <ul>
                     <li>Koolhydraatarme recepten</li>
                     <li>Glutevrije recepten</li>
@@ -336,7 +373,7 @@
             </section>
 
             <section>
-                <a href="inspiratie.html"> KEUKEN </a>
+                <a href="index.html"> KEUKEN </a>
                 <ul>
                     <li>Grieks</li>
                     <li>Aziatisch</li>
@@ -352,7 +389,7 @@
             </section>
 
             <section>
-                <a href="inspiratie.html"> THEMA </a>
+                <a href="index.html"> THEMA </a>
                 <ul>
                     <li>Sinterklaasrecepten</li>
                     <li>Kerstrecepten</li>
@@ -361,7 +398,7 @@
             </section>
 
             <section>
-                <a href="inspiratie.html"> EXTRA THEMA </a>
+                <a href="index.html"> EXTRA THEMA </a>
                 <ul>
                     <li>Herfst recepten</li>
                     <li> Winter recepten</li>
@@ -370,16 +407,22 @@
 
         </section>
 
+        <!--- dit is de onderkant van de footer met de laatste informatie van de website --->
+
         <hr>
 
-        <a href="inspiratie.html">Contact</a>
-        <a href="inspiratie.html">Adverteren</a>
-        <a href="inspiratie.html">Disclaimer en cookies</a>
-        <a href="inspiratie.html">Veel gestelde vragen</a>
+        <a href="index.html">Contact</a>
+        <a href="index.html">Adverteren</a>
+        <a href="index.html">Disclaimer en cookies</a>
+        <a href="index.html">Veel gestelde vragen</a>
 
     </footer>
 
-     <div class="tab">
+    <!--- dit is het einde van de footer --->
+
+    <!--- hier start de tabbar wat alleen zichtbaar is als het scherm kleiner is dan 1040px --->
+
+    <div class="tab">
         <nav>
             <ul>
                 <li><img src="images/bestek.jpg" alt="bestek">
@@ -395,5 +438,9 @@
             </ul>
         </nav>
     </div>
+
+    <!--- dit is het einde van de tabbar --->
+
+    <script src="scripts/script.js"></script>
 
 </body>
